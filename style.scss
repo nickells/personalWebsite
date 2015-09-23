@@ -1,0 +1,18 @@
+.projectThumb{
+	display: block;
+	border: 1px solid rgba(0,0,0,0.5);
+	.imgThumb {
+		width: 400px;
+	}
+	.inner{
+		display: inline-block;
+		h1{
+			margin: 0;
+			padding: 0;
+		}
+		span{
+			padding-left: 10px;
+		}
+	}
+	margin: 10px;
+}

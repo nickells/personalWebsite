@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="Website">
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="compass/stylesheets/screen.css">
+	<title>Nick Ellsworth</title>
+
+</head>
+<body ng-controller="MainCtrl">
+	<div id="nav">
+		<div class="navLink">Projects</div><div class="navLink">Blog</div><div class="navLink">Resume</div><div class="navLink">About</div>
+	</div>
+	<project ng-repeat="project in projects"></project>
+</body>
+
+</html>
