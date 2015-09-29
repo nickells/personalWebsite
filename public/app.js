@@ -1,4 +1,12 @@
-var app = angular.module('Website', [])
+var app = angular.module('Website', ["ui.router"])
+
+app.config(function($stateProvider){
+	$stateProvider.state('projects',{
+		url: '/',
+		templateUrl: 'views/projects.html',
+		controller: 'MainCtrl'
+	})
+})
 
 app.controller('MainCtrl', function($scope){
 	$scope.projects = 
@@ -24,10 +32,10 @@ app.controller('MainCtrl', function($scope){
 
 })
 
+
 app.directive('project', function () {
 	return {
 		restrict: 'E',
-		templateUrl: 'projectDirective.html',
+		templateUrl: 'views/projectDirective.html',
 	}
-
 })

@@ -5,7 +5,27 @@
 
 @import "compass/reset";
 
-$color1: #466;
+$color1: #555;
+
+@media (max-width: 800px) {
+	.projectThumb{
+		*{
+			display: block !important;
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+   body{
+   		width: 90% !important;
+   }
+}
+
+
+.sample-show-hide.ng-hide {
+  opacity:0;
+}
+
 
 body{
 	*{ 
@@ -17,6 +37,10 @@ body{
 	margin: 0 auto;
 }
 
+h1{
+	font-size: 30pt;
+}
+
 #nav{
 	.navLink{
 		background: $color1;
@@ -25,6 +49,8 @@ body{
 		padding: 10px;
 		margin: 1px;
 		display: inline;
+		transition: .1s;
+		bottom: 0px;
 		&:hover{
 			cursor: pointer;
 			background: lighten($color1,10);
@@ -49,7 +75,6 @@ body{
 		width: 500px;
 		h1{
 			padding: 10px;
-			font-size: 30pt;
 			background: $color1;
 			color: white;
 		}
@@ -58,5 +83,5 @@ body{
 			line-height: 1.5;
 		}
 	}
-	margin: 10px;
+	margin: 10px 0px;
 }

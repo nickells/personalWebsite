@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="Website">
+<head>
+	<base href="/">	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="blog.js"></script>
+	<script type="text/javascript" src="resume.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="compass/stylesheets/screen.css">
+	<title>Nick Ellsworth</title>
+
+</head>
+<body ng-controller="MainCtrl">
+	<div id="nav">
+		<div class="navLink" ui-sref="projects">Projects</div><div class="navLink" ui-sref="blog">Blog</div><div class="navLink" ui-sref="resume">Resume</div><div class="navLink">About</div>
+	</div>
+	<ui-view></ui-view>
+</body>
+
+</html>
