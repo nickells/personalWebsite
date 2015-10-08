@@ -4,6 +4,7 @@
   "description": "nick's website",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "http-server": "^0.8.4",
     "mongoose": "^4.1.9"

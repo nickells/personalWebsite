@@ -2,112 +2,49 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
 @media (max-width: 800px) {
-  /* line 12, ../sass/screen.scss */
+  /* line 11, ../sass/screen.scss */
   .projectThumb * {
     display: block !important;
   }
 }
 @media (max-width: 1100px) {
-  /* line 19, ../sass/screen.scss */
+  /* line 18, ../sass/screen.scss */
   body {
     width: 90% !important;
   }
 }
-/* line 25, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 .sample-show-hide.ng-hide {
   opacity: 0;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 body {
   width: 1000px;
   margin: 0 auto;
 }
-/* line 31, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 body * {
-  font-family: Lucida Grande;
+  font-family: 'Roboto', sans-serif;
   font-size: 10pt;
   box-sizing: border-box;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 h1 {
   font-size: 30pt;
+  font-weight: 500;
+  margin: 0;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 #nav {
   margin: 30px 0px;
 }
-/* line 45, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 #nav .navLink {
-  background: #555;
+  background: rgba(20, 20, 100, 0.8);
   position: relative;
   color: white;
   padding: 10px;
@@ -116,14 +53,73 @@ h1 {
   transition: .1s;
   bottom: 0px;
 }
-/* line 54, ../sass/screen.scss */
-#nav .navLink:hover {
+/* line 55, ../sass/screen.scss */
+#nav .navLink:hover, #nav .navLink:focus {
+  outline: none;
   cursor: pointer;
-  background: #6f6f6f;
+  background: rgba(29, 29, 143, 0.8);
   bottom: 3px;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
+blog-post div {
+  padding: 20px 0px;
+}
+/* line 68, ../sass/screen.scss */
+blog-post div h1 {
+  margin: 10px 0px;
+  font-weight: 800;
+  color: #333;
+}
+/* line 73, ../sass/screen.scss */
+blog-post div p {
+  line-height: 1.5;
+}
+/* line 77, ../sass/screen.scss */
+blog-post hr {
+  margin: 20px auto;
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(20, 20, 100, 0.8), transparent);
+}
+
+/* line 87, ../sass/screen.scss */
+#admin * {
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 92, ../sass/screen.scss */
+#admin button {
+  padding: 10px;
+}
+/* line 97, ../sass/screen.scss */
+#admin form #title {
+  font-size: 20pt;
+  font-weight: bold;
+  width: 100%;
+}
+/* line 102, ../sass/screen.scss */
+#admin form textarea {
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+}
+/* line 107, ../sass/screen.scss */
+#admin form #tags {
+  width: 100%;
+}
+/* line 110, ../sass/screen.scss */
+#admin form button {
+  float: right;
+}
+/* line 114, ../sass/screen.scss */
+#admin #togglePreview * {
+  cursor: pointer;
+  display: inline;
+}
+
+/* line 120, ../sass/screen.scss */
 .projectThumb {
   display: flex;
   width: 100%;
@@ -131,24 +127,24 @@ h1 {
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 10px 0px;
 }
-/* line 68, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .projectThumb .imgThumb {
   display: inline;
   width: 500px;
 }
-/* line 72, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .projectThumb .right {
   display: inline-flex;
   flex-direction: column;
   width: 500px;
 }
-/* line 76, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .projectThumb .right h1 {
   padding: 10px;
-  background: #555;
+  background: rgba(20, 20, 100, 0.8);
   color: white;
 }
-/* line 81, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .projectThumb .right span {
   padding: 10px;
   line-height: 1.5;

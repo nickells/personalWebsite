@@ -1,0 +1,24 @@
+<div id="admin">
+	<h1>Add Blog Post</h1>
+	<form name="newPost">
+		<input id="title" ng-model="post.title" placeholder="Title" required></input>
+		<textarea ng-model="post.text" placeholder="Content" required></textarea>
+		<input id="tags" ng-model="post.tags" placeholder="tags"></input>
+		<button ng-click="submit(post)" >Submit post</button>
+	</form>
+
+	<div id="togglePreview" ng-click="togglePreview()">
+		<div ng-if="previewEnabled">
+			<i class="fa fa-eye-slash"></i>
+			Hide preview
+		</div>
+		<div ng-if="!previewEnabled">
+			<i class="fa fa-eye"></i>
+			Show preview
+		</div>
+	</div>
+
+
+	<p marked='post.text' ng-if="previewEnabled"></p>
+
+</div>

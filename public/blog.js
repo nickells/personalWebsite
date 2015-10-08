@@ -6,18 +6,30 @@ app.config(function($stateProvider){
 	})
 })
 
-app.controller('BlogCtrl', function($scope){
-	$scope.posts = [
-	{title:'hello', text:'the blog post'},
-	{title:'this', text: 'this is the other post'},
-	{title:'is', text: 'the third post'},
-	{title:'blog',text: 'hello!'}]
+app.factory('BlogFactory', function($http){
+	return{
+		getBlogPosts: $http.get('/api/blog')
+		.then(function(posts){
+			return posts.data
+		}),
+		addPost: function(body){
+			console.log('blogFactory',body)
+			return $http.post('/api/blog',body)
+		}
+	}
+})
+
+app.controller('BlogCtrl', function($scope,BlogFactory){
+	BlogFactory.getBlogPosts
+	.then(function(posts){
+		$scope.posts = posts
+	})
 })
 
 
 app.directive('blogPost',function(){
 	return {
 		restrict: 'E',
-		template: '<h1>{{post.title}}</h1><p>{{post.text}}</p>'
+		templateUrl: 'views/blogPostDirective.html'
 	}
 })
