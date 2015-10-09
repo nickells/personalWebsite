@@ -2,150 +2,255 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@media (max-width: 800px) {
-  /* line 11, ../sass/screen.scss */
-  .projectThumb * {
-    display: block !important;
-  }
-}
-@media (max-width: 1100px) {
-  /* line 18, ../sass/screen.scss */
-  body {
-    width: 90% !important;
-  }
-}
-/* line 24, ../sass/screen.scss */
-.sample-show-hide.ng-hide {
-  opacity: 0;
+/*$color1: #48C;*/
+/* line 16, ../sass/screen.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 body {
-  width: 1000px;
-  margin: 0 auto;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
-/* line 30, ../sass/screen.scss */
+
+@media screen and (max-width: 783px) {
+  /* line 33, ../sass/screen.scss */
+  .projectThumb span, .projectThumb div {
+    font-size: 1.6vw;
+  }
+}
+@media screen and (max-width: 620px) {
+  /* line 40, ../sass/screen.scss */
+  .navBar {
+    display: none !important;
+  }
+
+  /* line 43, ../sass/screen.scss */
+  .navLink {
+    width: 100%;
+  }
+
+  /* line 46, ../sass/screen.scss */
+  .projectThumb {
+    flex-direction: column !important;
+    margin: 20px 0px !important;
+  }
+  /* line 48, ../sass/screen.scss */
+  .projectThumb img {
+    width: 100% !important;
+  }
+  /* line 52, ../sass/screen.scss */
+  .projectThumb span, .projectThumb div {
+    font-size: 10pt;
+  }
+}
+/* line 62, ../sass/screen.scss */
+body {
+  margin: 0;
+  background: white;
+}
+/* line 64, ../sass/screen.scss */
 body * {
   font-family: 'Roboto', sans-serif;
   font-size: 10pt;
-  box-sizing: border-box;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
+#content {
+  padding-top: 100px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 81, ../sass/screen.scss */
+#nav {
+  position: fixed;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  margin: 0px 0px 40px;
+}
+/* line 86, ../sass/screen.scss */
+#nav * {
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* line 92, ../sass/screen.scss */
+#nav .navBar {
+  background: #25A;
+  position: relative;
+  color: white;
+  display: inline;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+/* line 100, ../sass/screen.scss */
+#nav .beginning {
+  width: 50px;
+  margin-right: 1px;
+}
+/* line 104, ../sass/screen.scss */
+#nav .end {
+  margin-left: 1px;
+}
+/* line 107, ../sass/screen.scss */
+#nav .navLink {
+  outline: none;
+  background: #25A;
+  position: relative;
+  color: white;
+  padding: 15px;
+  margin: 0 1px;
+  display: inline;
+  transition: .1s;
+  bottom: 0px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  padding-top: 17px;
+}
+/* line 119, ../sass/screen.scss */
+#nav .navLink:hover {
+  cursor: pointer;
+  background: #2b6ad5;
+  bottom: 3px;
+  box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* line 130, ../sass/screen.scss */
+.active {
+  border-bottom: 6px solid #ddaa55 !important;
+}
+
+/* line 134, ../sass/screen.scss */
 h1 {
   font-size: 30pt;
   font-weight: 500;
   margin: 0;
 }
 
-/* line 45, ../sass/screen.scss */
-#nav {
-  margin: 30px 0px;
-}
-/* line 46, ../sass/screen.scss */
-#nav .navLink {
-  background: rgba(20, 20, 100, 0.8);
-  position: relative;
-  color: white;
-  padding: 10px;
-  margin: 1px;
-  display: inline;
-  transition: .1s;
-  bottom: 0px;
-}
-/* line 55, ../sass/screen.scss */
-#nav .navLink:hover, #nav .navLink:focus {
-  outline: none;
-  cursor: pointer;
-  background: rgba(29, 29, 143, 0.8);
-  bottom: 3px;
-}
-
-/* line 66, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 blog-post div {
-  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
 }
-/* line 68, ../sass/screen.scss */
-blog-post div h1 {
-  margin: 10px 0px;
+/* line 148, ../sass/screen.scss */
+blog-post div > h1 {
+  margin: 0px 0px;
   font-weight: 800;
-  color: #333;
+  color: #555;
 }
-/* line 73, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 blog-post div p {
+  margin: 0;
+  font-size: 13pt;
   line-height: 1.5;
 }
-/* line 77, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
+blog-post div .date {
+  font-style: italic;
+  font-size: 12pt;
+  color: grey;
+  padding-bottom: 5pt;
+}
+/* line 165, ../sass/screen.scss */
 blog-post hr {
-  margin: 20px auto;
+  margin: 20px 0px;
   width: 80%;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, transparent, rgba(20, 20, 100, 0.8), transparent);
+  background-image: linear-gradient(to right, transparent, #25A, transparent);
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 #admin * {
   display: block;
   margin-bottom: 10px;
 }
-/* line 92, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #admin button {
   padding: 10px;
 }
-/* line 97, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 #admin form #title {
   font-size: 20pt;
   font-weight: bold;
   width: 100%;
 }
-/* line 102, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #admin form textarea {
   width: 100%;
   height: 200px;
   display: inline-block;
 }
-/* line 107, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #admin form #tags {
   width: 100%;
 }
-/* line 110, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #admin form button {
   float: right;
 }
-/* line 114, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 #admin #togglePreview * {
   cursor: pointer;
   display: inline;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .projectThumb {
   display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 300px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.2);
   margin: 10px 0px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
 }
-/* line 125, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .projectThumb .imgThumb {
-  display: inline;
-  width: 500px;
+  width: 50%;
+  height: 100%;
 }
-/* line 129, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .projectThumb .right {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  width: 500px;
 }
-/* line 133, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .projectThumb .right h1 {
   padding: 10px;
-  background: rgba(20, 20, 100, 0.8);
+  background: #25A;
   color: white;
 }
-/* line 138, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .projectThumb .right span {
   padding: 10px;
   line-height: 1.5;
+  flex-grow: 1;
+}
+/* line 238, ../sass/screen.scss */
+.projectThumb .right .bottombuttons-container {
+  display: flex;
+  flex-direction: row;
+  background: #ddaa55;
+}
+/* line 242, ../sass/screen.scss */
+.projectThumb .right .bottombuttons-container div {
+  width: 50%;
+  box-sizing: content-box;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #eed5aa;
+}
+/* line 249, ../sass/screen.scss */
+.projectThumb .right .bottombuttons-container div:hover {
+  background: #eed5aa;
 }

@@ -1,7 +1,10 @@
 <div class="projectThumb">
-<div style="background: url(/images/{{project.name}}.png); background-size: cover" class="imgThumb"></div>
+	<img class="imgThumb" ng-src="/images/{{project.name}}.png"></img>
 	<div class="right">
 		<h1>{{project.displayName}}</h1>
 		<span>{{project.description}}</span>
+		<div class="bottombuttons-container">
+			<div>view on github</div><div>view website</div>
+		</div>
 	</div>
 </div>

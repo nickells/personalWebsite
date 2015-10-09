@@ -8,33 +8,38 @@ app.config(function($stateProvider){
 	$stateProvider.state('projects',{
 		url: '/',
 		templateUrl: 'views/projects.html',
-		controller: 'MainCtrl'
+		controller: 'MainCtrl',
+		onEnter: function(navService){
+		    navService.setActive('projects')
+		}
 	})
 })
 
-app.controller('MainCtrl', function($scope){
+app.controller('MainCtrl', function($scope,navService){
+
 	$scope.projects = 
 		[{
 			name: "blipcrowd",
 			displayName: "BlipCrowd",
-			description: "i made this"
+			description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
 		}, {
 			name: "dictatone",
 			displayName: "Dictatone",
-			description: "another thing i made"
+			description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
 		}, {
 			name: "mementodash",
 			displayName: "MementoDash",
-			description: "another thing i made!!"
+			description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
 		}, {
 			name: "breezeblocks",
 			displayName: "Breezeblocks.io",
-			description: "Web application with a drag and drop graphical user interface for quickly prototyping multipage native mobile applications. "
+			description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
 		}]
 
 	$scope.hi = "Greetings!"
 
 })
+
 
 
 app.directive('project', function () {

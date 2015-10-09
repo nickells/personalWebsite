@@ -2,7 +2,10 @@ app.config(function($stateProvider){
 	$stateProvider.state('blog',{
 		url: '/blog',
 		templateUrl: 'views/blog.html',
-		controller: 'BlogCtrl'
+		controller: 'BlogCtrl',
+		onEnter: function(navService){
+		    navService.setActive('blog')
+		}
 	})
 })
 
@@ -19,7 +22,9 @@ app.factory('BlogFactory', function($http){
 	}
 })
 
-app.controller('BlogCtrl', function($scope,BlogFactory){
+app.controller('BlogCtrl', function($scope,BlogFactory,navService){
+
+
 	BlogFactory.getBlogPosts
 	.then(function(posts){
 		$scope.posts = posts

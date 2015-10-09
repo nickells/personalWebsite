@@ -11,14 +11,15 @@
 	<title>Nick Ellsworth</title>
 
 </head>
-<body ng-controller="MainCtrl">
-	<div id="nav">
-		<div class="navLink" ui-sref="projects" tabindex="1">Projects</div><!--
-		--><div class="navLink" ui-sref="blog" tabindex="2">Blog</div><!--
-		--><div class="navLink" ui-sref="resume" tabindex="3">Resume</div><!--
-		--><div class="navLink" tabindex="4">About</div>
+<body>
+	<div id="nav" ng-controller="NavCtrl">
+			   	<div class="navBar beginning"></div>
+			   	<div class="navLink" ng-repeat="button in nav" ui-sref="{{button.name}}" tabindex="1" ng-click='setActive(button.name)' ng-class='{active: activePageObj.active == button.name}'>{{button.displayName}}</div>
+			  	<div class="navBar end"></div>
 	</div>
-	<ui-view></ui-view>
+	<div id="content">
+		<ui-view></ui-view>
+	</div>
 
 
 
@@ -32,6 +33,9 @@
 	<script type="text/javascript" src="blog.js"></script>
 	<script type="text/javascript" src="resume.js"></script>
 	<script type="text/javascript" src="admin.js"></script>
+	<script type="text/javascript" src="about.js"></script>
+	<script type="text/javascript" src="nav.js"></script>
+
 </body>
 
 </html>

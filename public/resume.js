@@ -7,6 +7,9 @@ app.config(function($stateProvider,$locationProvider){
 
 	$stateProvider.state('resume',{
 		url: '/resume',
-		templateUrl: 'views/resume.html'
+		templateUrl: 'views/resume.html',
+		onEnter: function(navService){
+		    navService.setActive('resume')
+		}
 	})
 })
