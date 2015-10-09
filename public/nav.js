@@ -15,7 +15,6 @@ app.service('navService', function(){
 
 	service.active;
 	service.setActive = function(tab){
-		console.log('setting active to',tab)
 		service.active = tab;
 	}
 	return service

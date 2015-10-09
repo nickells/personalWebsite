@@ -90,7 +90,7 @@ body{
 	}
 
 	.navBar{
-		background: $color1;
+		background: linear-gradient($color1,darken($color1,10));
 		position: relative;
 		color: white;
 		display: inline;
@@ -106,7 +106,7 @@ body{
 	}
 	.navLink{
 		outline: none;
-		background: $color1;
+		background: linear-gradient($color1, darken($color1,10));
 		position: relative;
 		color: white;
 		padding: 15px;
@@ -118,7 +118,7 @@ body{
 		padding-top: 17px;
 		&:hover{
 			cursor: pointer;
-			background: lighten($color1,10);
+			background: linear-gradient(lighten($color1,5),darken($color1,0));
 			bottom: 3px;
 			box-shadow: 0px 8px 5px rgba(0,0,0,0.1);
 		};
@@ -163,7 +163,7 @@ blog-post{
 		}
 	}
 	hr{
-		margin: 20px 0px;
+		margin: 20px auto;
 		width: 80%;
 	    border: 0;
 	    height: 1px;
@@ -227,7 +227,7 @@ blog-post{
 		flex-direction: column;
 		h1{
 			padding: 10px;
-			background: $color1;
+			background: linear-gradient($color1,darken($color1,10));
 			color: white;
 		}
 		span{
@@ -238,16 +238,18 @@ blog-post{
 		.bottombuttons-container {
 			display: flex;
 			flex-direction: row;
-			background: $color1_inv;
+
 			div{
 				width: 50%;
+				background: linear-gradient($color1_inv, darken($color1_inv,20));
 				box-sizing: content-box;
 				text-align: center;
 				padding: 10px;
 				cursor: pointer;
-				border: 1px solid lighten($color1_inv,20);
+				border: 1px solid darken($color1_inv,25);
+				box-shadow: 0px 1px lighten($color1_inv, 20) inset;
 				&:hover{
-					background: lighten($color1_inv,20);
+					background: linear-gradient($color1_inv, darken($color1_inv,10));
 				};
 			}
 		}

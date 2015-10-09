@@ -83,7 +83,7 @@ body * {
 }
 /* line 92, ../sass/screen.scss */
 #nav .navBar {
-  background: #25A;
+  background: linear-gradient(#25A, #1a4080);
   position: relative;
   color: white;
   display: inline;
@@ -102,7 +102,7 @@ body * {
 /* line 107, ../sass/screen.scss */
 #nav .navLink {
   outline: none;
-  background: #25A;
+  background: linear-gradient(#25A, #1a4080);
   position: relative;
   color: white;
   padding: 15px;
@@ -116,7 +116,7 @@ body * {
 /* line 119, ../sass/screen.scss */
 #nav .navLink:hover {
   cursor: pointer;
-  background: #2b6ad5;
+  background: linear-gradient(#2660bf, #2255aa);
   bottom: 3px;
   box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.1);
 }
@@ -160,7 +160,7 @@ blog-post div .date {
 }
 /* line 165, ../sass/screen.scss */
 blog-post hr {
-  margin: 20px 0px;
+  margin: 20px auto;
   width: 80%;
   border: 0;
   height: 1px;
@@ -226,7 +226,7 @@ blog-post hr {
 /* line 228, ../sass/screen.scss */
 .projectThumb .right h1 {
   padding: 10px;
-  background: #25A;
+  background: linear-gradient(#25A, #1a4080);
   color: white;
 }
 /* line 233, ../sass/screen.scss */
@@ -239,18 +239,19 @@ blog-post hr {
 .projectThumb .right .bottombuttons-container {
   display: flex;
   flex-direction: row;
-  background: #ddaa55;
 }
 /* line 242, ../sass/screen.scss */
 .projectThumb .right .bottombuttons-container div {
   width: 50%;
+  background: linear-gradient(#ddaa55, #aa7722);
   box-sizing: content-box;
   text-align: center;
   padding: 10px;
   cursor: pointer;
-  border: 1px solid #eed5aa;
+  border: 1px solid #95681e;
+  box-shadow: 0px 1px #eed5aa inset;
 }
-/* line 249, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .projectThumb .right .bottombuttons-container div:hover {
-  background: #eed5aa;
+  background: linear-gradient(#ddaa55, #d5952b);
 }
