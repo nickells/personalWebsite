@@ -1,6 +1,6 @@
 app.config(function($stateProvider){
 	$stateProvider.state('about',{
-		url: '/about',
+		url: '/',
 		template: 'nothing here yet',
 		onEnter: function(navService){
 		    navService.setActive('about')

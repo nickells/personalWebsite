@@ -1,0 +1,33 @@
+//============================= blog things =============================
+
+blog-post{
+
+	div{
+		display: flex;
+		flex-direction: column;
+		margin: 0px 10px;
+		>h1{
+			margin: 0px 0px;
+			font-weight: 800;
+			color: #666;	
+		}
+		p{
+			margin: 0;
+			font-size: 13pt;
+			line-height: 1.5;
+		}
+		.date{
+			font-style: italic;
+			font-size:12pt;
+			color: grey;
+			padding-bottom: 5pt;
+		}
+	}
+	hr{
+		margin: 20px auto;
+		width: 80%;
+	    border: 0;
+	    height: 1px;
+	    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $color2, rgba(0, 0, 0, 0));
+	}
+}

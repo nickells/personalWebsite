@@ -1,0 +1,56 @@
+//============================= project things =============================
+
+
+.projectThumb{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	border: 2px solid darken($color1,15);
+	justify-content: space-between;
+	background-color: rgba(255,255,255,0.8);
+	.imgThumb {
+		width: 50%;
+		height: 100%;
+		/*padding: 0px;*/
+
+	}
+	.title{
+		padding: 10px;
+		background: linear-gradient($color1,darken($color1,10));
+		color: white;
+	}
+	.name2{
+		display: none;
+	}
+	.description{
+		display: flex;
+		flex-direction: column;
+		span{
+			padding: 10px;
+			line-height: 1.5;
+			flex-grow: 1;
+		}
+		.bottombuttons-container {
+			display: flex;
+			flex-direction: row;
+			font-weight: 500;
+			color: white;
+
+			div{
+				box-sizing: margin-box;
+				width: 100%;
+				margin: 1px;
+				background: linear-gradient($color2, darken($color2,10));
+				box-sizing: content-box;
+				text-align: center;
+				padding: 10px;
+				cursor: pointer;
+				&:hover{
+					background: linear-gradient(lighten($color2,10), $color2);
+				};
+			}
+		}
+	}
+	margin-bottom: 25px;
+	box-shadow: $shadow1;
+}

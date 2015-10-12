@@ -1,0 +1,61 @@
+//============================= navbar things =============================
+
+#nav{
+	position: fixed;
+	height: 50px;
+	display: flex;
+	width: 100%;
+	*{
+		font-size: 12pt;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.navBar{
+		background: linear-gradient($color1,darken($color1,10));
+		position: relative;
+		color: white;
+		display: inline;
+		box-shadow: $shadow1;
+		width: 100%;
+	}
+	.beginning{
+		width: 50px;
+		margin-right: 1px;
+	}
+	.end{
+		margin-left: 1px;
+	}
+	.navLink{
+		outline: none;
+		background: linear-gradient($color1, darken($color1,10));
+		position: relative;
+		color: white;
+		padding: 15px;
+		margin: 0 1px;
+		display: inline;
+		transition: .1s;
+		bottom: 0px;
+		box-shadow: $shadow1;
+		padding-top: 17px;
+		&:hover{
+			cursor: pointer;
+			background: linear-gradient(lighten($color1,5),darken($color1,0));
+			bottom: 3px;
+			box-shadow: 0px 8px 5px rgba(0,0,0,0.1);
+		};
+	}
+	margin: 0px 0px 40px;
+	/*box-shadow: 0 20px 50px rgba(255,255,255,0.6);*/
+}
+
+
+.active {
+	border-bottom: 6px solid $color3 !important;
+}
+
+h1{
+	font-size: 30pt;
+	font-weight: 500;
+	margin: 0;
+}
