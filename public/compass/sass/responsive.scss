@@ -17,16 +17,23 @@ body {
 
 //============================= responsive things =============================
 
-
-@media screen and (max-width: 783px) {
+@media screen and (max-width: 1000px) {
 	.projectThumb{
 		border-left: none !important;
 		border-right: none !important;
+	}
+}
+
+@media screen and (max-width: 783px) {
+	.projectThumb{
 		span,div{
 			font-size: 1.6vw;
 		}
 	}
 }
+
+
+
 
 //============================= little browsers =============================
 

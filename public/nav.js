@@ -3,7 +3,7 @@ app.controller('NavCtrl', function($scope,navService,$document,$state){
 
 	$scope.nav = [
 		{name: 'about', displayName: 'About'},
-		{name: 'projects', displayName: 'Projects'},
+		{name: 'projects', displayName: 'Portfolio'},
 		{name: 'blog', displayName: 'Blog'},
 		{name: 'resume', displayName: 'Résumé'}
 	]

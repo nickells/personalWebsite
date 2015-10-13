@@ -1,7 +1,7 @@
 /*$color1: #48C;*/
 /*$color1: #448;*/
 /* line 8, ../sass/blog.scss */
-blog-post div { background: white; display: flex; flex-direction: column; padding: 10px; }
+blog-post div { background: white; display: flex; flex-direction: column; padding: 15px; }
 /* line 13, ../sass/blog.scss */
 blog-post div > h1 { margin: 0px 0px; font-weight: 800; color: #666; }
 /* line 18, ../sass/blog.scss */
