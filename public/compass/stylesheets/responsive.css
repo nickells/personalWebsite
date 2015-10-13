@@ -10,39 +10,39 @@ body { height: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; }
   .projectThumb { border-left: none !important; border-right: none !important; }
   /* line 25, ../sass/responsive.scss */
   .projectThumb span, .projectThumb div { font-size: 1.6vw; } }
-@media screen and (max-width: 620px) { /* line 34, ../sass/responsive.scss */
+@media screen and (max-width: 620px) { /* line 35, ../sass/responsive.scss */
   .navBar { display: none !important; }
-  /* line 37, ../sass/responsive.scss */
+  /* line 38, ../sass/responsive.scss */
   .navLink { width: 100%; }
-  /* line 40, ../sass/responsive.scss */
+  /* line 41, ../sass/responsive.scss */
   .projectThumb { flex-direction: column !important; margin: 20px 0px !important; }
-  /* line 43, ../sass/responsive.scss */
+  /* line 44, ../sass/responsive.scss */
   .projectThumb img { width: 100% !important; }
-  /* line 47, ../sass/responsive.scss */
+  /* line 48, ../sass/responsive.scss */
   .projectThumb span, .projectThumb div { font-size: 10pt; }
-  /* line 50, ../sass/responsive.scss */
+  /* line 51, ../sass/responsive.scss */
   .projectThumb .description { order: 1 !important; }
-  /* line 54, ../sass/responsive.scss */
+  /* line 55, ../sass/responsive.scss */
   .projectThumb .name1 { display: none !important; }
-  /* line 57, ../sass/responsive.scss */
+  /* line 58, ../sass/responsive.scss */
   .projectThumb .name2 { display: flex !important; }
-  /* line 61, ../sass/responsive.scss */
+  /* line 62, ../sass/responsive.scss */
   #content { padding-top: 50px !important; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) { /* line 68, ../sass/responsive.scss */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) { /* line 69, ../sass/responsive.scss */
   #nav { height: 100px !important; }
-  /* line 70, ../sass/responsive.scss */
+  /* line 71, ../sass/responsive.scss */
   #nav * { font-size: 30pt !important; }
-  /* line 74, ../sass/responsive.scss */
+  /* line 75, ../sass/responsive.scss */
   .navBar { display: none !important; }
-  /* line 77, ../sass/responsive.scss */
+  /* line 78, ../sass/responsive.scss */
   .navLink { width: 100%; }
-  /* line 80, ../sass/responsive.scss */
+  /* line 81, ../sass/responsive.scss */
   .projectThumb { border-left: none !important; border-right: none !important; flex-direction: column !important; margin: 20px 0px !important; }
-  /* line 84, ../sass/responsive.scss */
+  /* line 85, ../sass/responsive.scss */
   .projectThumb img { width: 100% !important; }
-  /* line 91, ../sass/responsive.scss */
+  /* line 92, ../sass/responsive.scss */
   .projectThumb span, .projectThumb div { font-size: 10pt; }
-  /* line 94, ../sass/responsive.scss */
+  /* line 95, ../sass/responsive.scss */
   .projectThumb .bottombuttons-container { height: 75px; }
-  /* line 96, ../sass/responsive.scss */
+  /* line 97, ../sass/responsive.scss */
   .projectThumb .bottombuttons-container * { font-size: 25pt; } }

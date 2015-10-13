@@ -6,10 +6,12 @@
 
 #admin{
 	*{
-		display: block;
 		margin-bottom: 10px;
 	}
 
+	div{
+		display: block;
+	}
 	button {
 		padding: 10px;
 	}
@@ -41,5 +43,13 @@
 .blogPost{
 	background: white;
 	padding: 15px;
-	font-size: 12pt;
+	&,* {
+		font-size: 12pt;
+	}
+	.preview{
+		font-weight: lighter;
+		font-style: italic;
+		display: inline;
+		color: #aaa;
+	}
 }

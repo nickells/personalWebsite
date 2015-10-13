@@ -1,12 +1,12 @@
 /*$color1: #48C;*/
 /*$color1: #448;*/
 /* line 8, ../sass/blog.scss */
-blog-post div { display: flex; flex-direction: column; margin: 0px 10px; }
-/* line 12, ../sass/blog.scss */
+blog-post div { background: white; display: flex; flex-direction: column; padding: 10px; }
+/* line 13, ../sass/blog.scss */
 blog-post div > h1 { margin: 0px 0px; font-weight: 800; color: #666; }
-/* line 17, ../sass/blog.scss */
+/* line 18, ../sass/blog.scss */
 blog-post div p, blog-post div p ul * { margin: 0; font-size: 14pt; line-height: 1.6; }
-/* line 22, ../sass/blog.scss */
+/* line 23, ../sass/blog.scss */
 blog-post div .date { font-style: italic; font-size: 12pt; color: grey; margin: 5px; }
-/* line 29, ../sass/blog.scss */
-blog-post hr { margin: 20px auto; width: 80%; border: 0; height: 1px; background-image: linear-gradient(to right, transparent, #e69500, transparent); }
+/* line 30, ../sass/blog.scss */
+blog-post hr { visibility: hidden; margin: 20px auto; width: 80%; border: 0; height: 1px; background-image: linear-gradient(to right, transparent, #e69500, transparent); }

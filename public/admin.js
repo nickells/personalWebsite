@@ -1,7 +1,12 @@
 app.config(function($stateProvider){
 	$stateProvider.state('admin',{
 		url: '/admin',
-		templateUrl: 'views/admin.html'
+		templateUrl: 'views/admin.html',
+		
+		//redirects to allPosts state
+		controller: function($state){
+			$state.go('admin.allPosts')
+		}
 	})
 	$stateProvider.state('admin.newPost',{
 		url: '/new',

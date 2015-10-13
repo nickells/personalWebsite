@@ -19,41 +19,41 @@ body { height: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; }
   .projectThumb { border-left: none !important; border-right: none !important; }
   /* line 25, ../sass/responsive.scss */
   .projectThumb span, .projectThumb div { font-size: 1.6vw; } }
-@media screen and (max-width: 620px) { /* line 34, ../sass/responsive.scss */
+@media screen and (max-width: 620px) { /* line 35, ../sass/responsive.scss */
   .navBar { display: none !important; }
-  /* line 37, ../sass/responsive.scss */
+  /* line 38, ../sass/responsive.scss */
   .navLink { width: 100%; }
-  /* line 40, ../sass/responsive.scss */
+  /* line 41, ../sass/responsive.scss */
   .projectThumb { flex-direction: column !important; margin: 20px 0px !important; }
-  /* line 43, ../sass/responsive.scss */
+  /* line 44, ../sass/responsive.scss */
   .projectThumb img { width: 100% !important; }
-  /* line 47, ../sass/responsive.scss */
+  /* line 48, ../sass/responsive.scss */
   .projectThumb span, .projectThumb div { font-size: 10pt; }
-  /* line 50, ../sass/responsive.scss */
+  /* line 51, ../sass/responsive.scss */
   .projectThumb .description { order: 1 !important; }
-  /* line 54, ../sass/responsive.scss */
+  /* line 55, ../sass/responsive.scss */
   .projectThumb .name1 { display: none !important; }
-  /* line 57, ../sass/responsive.scss */
+  /* line 58, ../sass/responsive.scss */
   .projectThumb .name2 { display: flex !important; }
-  /* line 61, ../sass/responsive.scss */
+  /* line 62, ../sass/responsive.scss */
   #content { padding-top: 50px !important; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) { /* line 68, ../sass/responsive.scss */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) { /* line 69, ../sass/responsive.scss */
   #nav { height: 100px !important; }
-  /* line 70, ../sass/responsive.scss */
+  /* line 71, ../sass/responsive.scss */
   #nav * { font-size: 30pt !important; }
-  /* line 74, ../sass/responsive.scss */
+  /* line 75, ../sass/responsive.scss */
   .navBar { display: none !important; }
-  /* line 77, ../sass/responsive.scss */
+  /* line 78, ../sass/responsive.scss */
   .navLink { width: 100%; }
-  /* line 80, ../sass/responsive.scss */
+  /* line 81, ../sass/responsive.scss */
   .projectThumb { border-left: none !important; border-right: none !important; flex-direction: column !important; margin: 20px 0px !important; }
-  /* line 84, ../sass/responsive.scss */
+  /* line 85, ../sass/responsive.scss */
   .projectThumb img { width: 100% !important; }
-  /* line 91, ../sass/responsive.scss */
+  /* line 92, ../sass/responsive.scss */
   .projectThumb span, .projectThumb div { font-size: 10pt; }
-  /* line 94, ../sass/responsive.scss */
+  /* line 95, ../sass/responsive.scss */
   .projectThumb .bottombuttons-container { height: 75px; }
-  /* line 96, ../sass/responsive.scss */
+  /* line 97, ../sass/responsive.scss */
   .projectThumb .bottombuttons-container * { font-size: 25pt; } }
 /* line 7, ../sass/projects.scss */
 .projectThumb { display: flex; flex-direction: row; width: 100%; border: 2px solid #2a629a; justify-content: space-between; background-color: rgba(255, 255, 255, 0.8); margin-bottom: 25px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
@@ -75,33 +75,39 @@ body { height: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; }
 .projectThumb .description .bottombuttons-container div:hover { background: linear-gradient(#ffae1a, #e69500); }
 
 /* line 8, ../sass/admin.scss */
-#admin * { display: block; margin-bottom: 10px; }
-/* line 13, ../sass/admin.scss */
+#admin * { margin-bottom: 10px; }
+/* line 12, ../sass/admin.scss */
+#admin div { display: block; }
+/* line 15, ../sass/admin.scss */
 #admin button { padding: 10px; }
-/* line 18, ../sass/admin.scss */
+/* line 20, ../sass/admin.scss */
 #admin form #title { font-size: 20pt; font-weight: bold; width: 100%; }
-/* line 23, ../sass/admin.scss */
+/* line 25, ../sass/admin.scss */
 #admin form textarea { width: 100%; height: 200px; display: inline-block; }
-/* line 28, ../sass/admin.scss */
+/* line 30, ../sass/admin.scss */
 #admin form #tags { width: 100%; }
-/* line 31, ../sass/admin.scss */
+/* line 33, ../sass/admin.scss */
 #admin form button { float: right; }
-/* line 35, ../sass/admin.scss */
+/* line 37, ../sass/admin.scss */
 #admin #togglePreview * { cursor: pointer; display: inline; }
 
-/* line 41, ../sass/admin.scss */
-.blogPost { background: white; padding: 15px; font-size: 12pt; }
+/* line 43, ../sass/admin.scss */
+.blogPost { background: white; padding: 15px; }
+/* line 46, ../sass/admin.scss */
+.blogPost, .blogPost * { font-size: 12pt; }
+/* line 49, ../sass/admin.scss */
+.blogPost .preview { font-weight: lighter; font-style: italic; display: inline; color: #aaa; }
 
 /* line 8, ../sass/blog.scss */
-blog-post div { display: flex; flex-direction: column; margin: 0px 10px; }
-/* line 12, ../sass/blog.scss */
+blog-post div { background: white; display: flex; flex-direction: column; padding: 10px; }
+/* line 13, ../sass/blog.scss */
 blog-post div > h1 { margin: 0px 0px; font-weight: 800; color: #666; }
-/* line 17, ../sass/blog.scss */
+/* line 18, ../sass/blog.scss */
 blog-post div p, blog-post div p ul * { margin: 0; font-size: 14pt; line-height: 1.6; }
-/* line 22, ../sass/blog.scss */
+/* line 23, ../sass/blog.scss */
 blog-post div .date { font-style: italic; font-size: 12pt; color: grey; margin: 5px; }
-/* line 29, ../sass/blog.scss */
-blog-post hr { margin: 20px auto; width: 80%; border: 0; height: 1px; background-image: linear-gradient(to right, transparent, #e69500, transparent); }
+/* line 30, ../sass/blog.scss */
+blog-post hr { visibility: hidden; margin: 20px auto; width: 80%; border: 0; height: 1px; background-image: linear-gradient(to right, transparent, #e69500, transparent); }
 
 /* line 5, ../sass/navbar.scss */
 #nav { position: fixed; height: 50px; display: flex; width: 100%; margin: 0px 0px 40px; /*box-shadow: 0 20px 50px rgba(255,255,255,0.6);*/ }

@@ -4,7 +4,7 @@ app.config(function($stateProvider){
 		templateUrl: 'views/blog.html',
 		controller: 'BlogCtrl',
 		onEnter: function(navService){
-		    navService.setActive('blog')
+		    navService.setActive('blog');
 		}
 	})
 })

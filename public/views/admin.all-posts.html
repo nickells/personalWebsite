@@ -1,1 +1,1 @@
-<div class="blogPost" ng-repeat = "post in posts">{{post.title}}</div>
+<div class="blogPost" ng-repeat = "post in posts">{{post.title}}: <span class="preview">{{post.text.slice(0,100)}}</span><span class="preview" ng-if='post.text.length > 100'>…</span></div>
