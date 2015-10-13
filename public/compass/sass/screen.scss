@@ -4,16 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 
-/*$color1: #48C;*/
-/*$color1: #448;*/
-
-$color1: darken(#48C,0);
-$color2: darken(orange,5);
-$color3: $color2;
-
-$shadow1: 0px 4px 5px rgba(0,0,0,0.2);
-
-
+@import './basecolors.scss';
 
 //============================= set up main layout =============================
 

@@ -1,85 +1,20 @@
-/*
-Error: Undefined variable: "$color1".
-        on line 8 of /Users/nick-auxdrive/Fullstack/Fellow/personalWebsite-2/public/compass/sass/projects.scss
-
-3: 
-4: .projectThumb{
-5: 	display: flex;
-6: 	flex-direction: row;
-7: 	width: 100%;
-8: 	border: 2px solid darken($color1,15);
-9: 	justify-content: space-between;
-10: 	background-color: rgba(255,255,255,0.8);
-11: 	.imgThumb {
-12: 		width: 50%;
-13: 		height: 100%;
-
-Backtrace:
-/Users/nick-auxdrive/Fullstack/Fellow/personalWebsite-2/public/compass/sass/projects.scss:8
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/variable.rb:49:in `_perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/funcall.rb:170:in `perform_arg'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/funcall.rb:124:in `each'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/funcall.rb:124:in `each'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/funcall.rb:124:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/funcall.rb:124:in `_perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/list_literal.rb:63:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/list_literal.rb:63:in `_perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:20:in `render'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/engine.rb:278:in `render'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/usr/local/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `call'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$color1\".\A         on line 8 of /Users/nick-auxdrive/Fullstack/Fellow/personalWebsite-2/public/compass/sass/projects.scss\A \A 3: \A 4: .projectThumb{\A 5: 	display: flex;\A 6: 	flex-direction: row;\A 7: 	width: 100%;\A 8: 	border: 2px solid darken($color1,15);\A 9: 	justify-content: space-between;\A 10: 	background-color: rgba(255,255,255,0.8);\A 11: 	.imgThumb {\A 12: 		width: 50%;\A 13: 		height: 100%;"; }
+/*$color1: #48C;*/
+/*$color1: #448;*/
+/* line 7, ../sass/projects.scss */
+.projectThumb { display: flex; flex-direction: row; width: 100%; border: 2px solid #2a629a; justify-content: space-between; background-color: rgba(255, 255, 255, 0.8); margin-bottom: 25px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
+/* line 14, ../sass/projects.scss */
+.projectThumb .imgThumb { width: 50%; height: 100%; /*padding: 0px;*/ }
+/* line 20, ../sass/projects.scss */
+.projectThumb .title { padding: 10px; background: linear-gradient(#4488cc, #2f6fae); color: white; }
+/* line 25, ../sass/projects.scss */
+.projectThumb .name2 { display: none; }
+/* line 28, ../sass/projects.scss */
+.projectThumb .description { display: flex; flex-direction: column; }
+/* line 31, ../sass/projects.scss */
+.projectThumb .description span { padding: 10px; line-height: 1.5; flex-grow: 1; }
+/* line 36, ../sass/projects.scss */
+.projectThumb .description .bottombuttons-container { display: flex; flex-direction: row; font-weight: 500; color: white; }
+/* line 42, ../sass/projects.scss */
+.projectThumb .description .bottombuttons-container div { box-sizing: margin-box; width: 100%; margin: 1px; background: linear-gradient(#e69500, #b37400); box-sizing: content-box; text-align: center; padding: 10px; cursor: pointer; }
+/* line 51, ../sass/projects.scss */
+.projectThumb .description .bottombuttons-container div:hover { background: linear-gradient(#ffae1a, #e69500); }

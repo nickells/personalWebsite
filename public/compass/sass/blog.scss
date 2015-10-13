@@ -1,3 +1,6 @@
+@import './basecolors.scss';
+
+
 //============================= blog things =============================
 
 blog-post{
@@ -11,16 +14,16 @@ blog-post{
 			font-weight: 800;
 			color: #666;	
 		}
-		p{
+		p,p ul *{
 			margin: 0;
-			font-size: 13pt;
-			line-height: 1.5;
+			font-size: 14pt;
+			line-height: 1.6;
 		}
 		.date{
 			font-style: italic;
 			font-size:12pt;
 			color: grey;
-			padding-bottom: 5pt;
+			margin: 5px;
 		}
 	}
 	hr{

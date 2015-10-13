@@ -11,6 +11,8 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "compass compile public/compass && node server.js",
+    "startdev": "compass watch public/compass & nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "nick",

@@ -1,3 +1,6 @@
+@import './basecolors.scss';
+
+
 //============================= admin things =============================
 
 
@@ -33,4 +36,10 @@
 		cursor: pointer;
 		display: inline;
 	}
+}
+
+.blogPost{
+	background: white;
+	padding: 15px;
+	font-size: 12pt;
 }

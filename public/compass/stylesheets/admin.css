@@ -1,34 +1,19 @@
-/* line 5, ../sass/admin.scss */
-#admin * {
-  display: block;
-  margin-bottom: 10px;
-}
-/* line 10, ../sass/admin.scss */
-#admin button {
-  padding: 10px;
-}
-/* line 15, ../sass/admin.scss */
-#admin form #title {
-  font-size: 20pt;
-  font-weight: bold;
-  width: 100%;
-}
-/* line 20, ../sass/admin.scss */
-#admin form textarea {
-  width: 100%;
-  height: 200px;
-  display: inline-block;
-}
-/* line 25, ../sass/admin.scss */
-#admin form #tags {
-  width: 100%;
-}
+/*$color1: #48C;*/
+/*$color1: #448;*/
+/* line 8, ../sass/admin.scss */
+#admin * { display: block; margin-bottom: 10px; }
+/* line 13, ../sass/admin.scss */
+#admin button { padding: 10px; }
+/* line 18, ../sass/admin.scss */
+#admin form #title { font-size: 20pt; font-weight: bold; width: 100%; }
+/* line 23, ../sass/admin.scss */
+#admin form textarea { width: 100%; height: 200px; display: inline-block; }
 /* line 28, ../sass/admin.scss */
-#admin form button {
-  float: right;
-}
-/* line 32, ../sass/admin.scss */
-#admin #togglePreview * {
-  cursor: pointer;
-  display: inline;
-}
+#admin form #tags { width: 100%; }
+/* line 31, ../sass/admin.scss */
+#admin form button { float: right; }
+/* line 35, ../sass/admin.scss */
+#admin #togglePreview * { cursor: pointer; display: inline; }
+
+/* line 41, ../sass/admin.scss */
+.blogPost { background: white; padding: 15px; font-size: 12pt; }
