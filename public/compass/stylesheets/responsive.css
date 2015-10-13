@@ -27,7 +27,7 @@ body { height: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; }
   /* line 65, ../sass/responsive.scss */
   .projectThumb .name2 { display: flex !important; }
   /* line 69, ../sass/responsive.scss */
-  #content { padding-top: 50px !important; } }
+  #content { /*padding-top: 100px !important;*/ } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) { /* line 76, ../sass/responsive.scss */
   #nav { height: 100px !important; }
   /* line 78, ../sass/responsive.scss */

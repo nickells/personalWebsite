@@ -3,9 +3,14 @@
 
 //============================= blog things =============================
 
+.blogHeader{
+	font-weight: 800;
+	font-size: 60px;
+}
+
 blog-post{
 
-	div{
+	.thePost{
 		background: white;
 		display: flex;
 		flex-direction: column;
@@ -14,21 +19,41 @@ blog-post{
 			margin: 0px 0px;
 			font-weight: 800;
 			color: #666;	
+			cursor: pointer;
+			&:hover{
+				color: $color1;
+			};
+			&:hover>.fa{
+				opacity: 1;
+			}
 		}
-		p,p ul *{
+		.fa{
+			position: relative;
+			opacity: 0;
+			font-size: 20pt;
+			padding-left: 5px;
+			bottom: 2px;
+		}
+		p,p ul,i,b *{
 			margin: 0;
 			font-size: 14pt;
+			font-weight: lighter;
 			line-height: 1.6;
 		}
 		.date{
 			font-style: italic;
 			font-size:12pt;
 			color: grey;
-			margin: 5px;
+			margin: 3px 0px;
 		}
+		box-shadow: $shadow1;
+		border-bottom: 5px solid $color1;
+		margin-bottom: 30px;
+
 	}
+
 	hr{
-		visibility: hidden;
+		display: none;
 		margin: 20px auto;
 		width: 80%;
 	    border: 0;

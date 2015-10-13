@@ -53,3 +53,32 @@
 		color: #aaa;
 	}
 }
+
+
+//delete button
+.delete-button-container{
+  display: inline-block;
+  border: 2px solid #a00;
+  width: 150px;
+  height: 20px;
+  overflow: hidden;
+}
+.deleter{
+  width: inherit;
+  height: inherit;
+  background: red;
+  color: white;
+}
+.confirmer{
+  padding: 0;
+  display: inline;
+  color: red;
+}
+.confirm-button{
+  width: auto;
+  float: right;
+  display: inline-block;
+  padding: 0px 10px;
+  color: black;
+  border: 1px solid grey;
+}

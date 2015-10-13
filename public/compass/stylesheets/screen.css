@@ -36,7 +36,7 @@ body { height: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; }
   /* line 65, ../sass/responsive.scss */
   .projectThumb .name2 { display: flex !important; }
   /* line 69, ../sass/responsive.scss */
-  #content { padding-top: 50px !important; } }
+  #content { /*padding-top: 100px !important;*/ } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) { /* line 76, ../sass/responsive.scss */
   #nav { height: 100px !important; }
   /* line 78, ../sass/responsive.scss */
@@ -98,16 +98,37 @@ body { height: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; }
 /* line 49, ../sass/admin.scss */
 .blogPost .preview { font-weight: lighter; font-style: italic; display: inline; color: #aaa; }
 
-/* line 8, ../sass/blog.scss */
-blog-post div { background: white; display: flex; flex-direction: column; padding: 15px; }
+/* line 59, ../sass/admin.scss */
+.delete-button-container { display: inline-block; border: 2px solid #a00; width: 150px; height: 20px; overflow: hidden; }
+
+/* line 66, ../sass/admin.scss */
+.deleter { width: inherit; height: inherit; background: red; color: white; }
+
+/* line 72, ../sass/admin.scss */
+.confirmer { padding: 0; display: inline; color: red; }
+
+/* line 77, ../sass/admin.scss */
+.confirm-button { width: auto; float: right; display: inline-block; padding: 0px 10px; color: black; border: 1px solid grey; }
+
+/* line 6, ../sass/blog.scss */
+.blogHeader { font-weight: 800; font-size: 60px; }
+
 /* line 13, ../sass/blog.scss */
-blog-post div > h1 { margin: 0px 0px; font-weight: 800; color: #666; }
+blog-post .thePost { background: white; display: flex; flex-direction: column; padding: 15px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); border-bottom: 5px solid #4488cc; margin-bottom: 30px; }
 /* line 18, ../sass/blog.scss */
-blog-post div p, blog-post div p ul * { margin: 0; font-size: 14pt; line-height: 1.6; }
+blog-post .thePost > h1 { margin: 0px 0px; font-weight: 800; color: #666; cursor: pointer; }
 /* line 23, ../sass/blog.scss */
-blog-post div .date { font-style: italic; font-size: 12pt; color: grey; margin: 5px; }
+blog-post .thePost > h1:hover { color: #4488cc; }
+/* line 26, ../sass/blog.scss */
+blog-post .thePost > h1:hover > .fa { opacity: 1; }
 /* line 30, ../sass/blog.scss */
-blog-post hr { visibility: hidden; margin: 20px auto; width: 80%; border: 0; height: 1px; background-image: linear-gradient(to right, transparent, #e69500, transparent); }
+blog-post .thePost .fa { position: relative; opacity: 0; font-size: 20pt; padding-left: 5px; bottom: 2px; }
+/* line 37, ../sass/blog.scss */
+blog-post .thePost p, blog-post .thePost p ul, blog-post .thePost i, blog-post .thePost b * { margin: 0; font-size: 14pt; font-weight: lighter; line-height: 1.6; }
+/* line 43, ../sass/blog.scss */
+blog-post .thePost .date { font-style: italic; font-size: 12pt; color: grey; margin: 3px 0px; }
+/* line 55, ../sass/blog.scss */
+blog-post hr { display: none; margin: 20px auto; width: 80%; border: 0; height: 1px; background-image: linear-gradient(to right, transparent, #e69500, transparent); }
 
 /* line 5, ../sass/navbar.scss */
 #nav { position: fixed; height: 50px; display: flex; width: 100%; margin: 0px 0px 40px; /*box-shadow: 0 20px 50px rgba(255,255,255,0.6);*/ }

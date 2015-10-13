@@ -4,15 +4,19 @@ app.config(function($stateProvider){
 		templateUrl: 'views/admin.html',
 		
 		//redirects to allPosts state
-		controller: function($state){
-			$state.go('admin.allPosts')
-		}
+		// controller: function($state){
+		// 	$state.go('admin.allPosts')
+		// }
+		
 	})
 	$stateProvider.state('admin.newPost',{
 		url: '/new',
 		parent: 'admin',
 		templateUrl: 'views/admin.add-post.html',
-		controller: 'AddPostCtrl'
+		controller: 'AddPostCtrl',
+		onEnter: function(navService){
+			navService.setActive('newPost')
+		}
 	})
 	$stateProvider.state('admin.allPosts', {
 		url: '/all',
@@ -41,6 +45,23 @@ app.controller('AddPostCtrl', function($scope,BlogFactory){
 
 	$scope.togglePreview = function(){
 		$scope.previewEnabled = !$scope.previewEnabled
+	}
+
+})
+
+app.directive('deleteButton', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'views/deleteButton.html',
+		link: function(elem){
+			$('.deleter').on('click', function(){
+			  $(this).slideUp()
+			});
+
+			$('.confirm-button.N').on('click', function(){
+			  $('.deleter').slideDown()
+			})
+		}
 	}
 
 })

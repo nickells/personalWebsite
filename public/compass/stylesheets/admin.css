@@ -23,3 +23,15 @@
 .blogPost, .blogPost * { font-size: 12pt; }
 /* line 49, ../sass/admin.scss */
 .blogPost .preview { font-weight: lighter; font-style: italic; display: inline; color: #aaa; }
+
+/* line 59, ../sass/admin.scss */
+.delete-button-container { display: inline-block; border: 2px solid #a00; width: 150px; height: 20px; overflow: hidden; }
+
+/* line 66, ../sass/admin.scss */
+.deleter { width: inherit; height: inherit; background: red; color: white; }
+
+/* line 72, ../sass/admin.scss */
+.confirmer { padding: 0; display: inline; color: red; }
+
+/* line 77, ../sass/admin.scss */
+.confirm-button { width: auto; float: right; display: inline-block; padding: 0px 10px; color: black; border: 1px solid grey; }

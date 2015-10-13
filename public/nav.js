@@ -10,13 +10,16 @@ app.controller('NavCtrl', function($scope,navService,$document,$state){
 
 	//use brackets or J/K to navigate
 	$document.bind('keypress', function(e) {
-		if (e.charCode === 93 || e.charCode === 107){
-			goToNextPage()
-		}
-		else if (e.charCode === 91 || e.charCode === 106){
-			goToPreviousPage()
-		}
-
+		
+		//disable keypresses for the page with a form on it
+		if (navService.active !== 'newPost'){
+			if (e.charCode === 93 || e.charCode === 107){
+				goToNextPage()
+			}
+			else if (e.charCode === 91 || e.charCode === 106){
+				goToPreviousPage()
+			}
+		}	
    });
 
 	//keyboard nav helper functions

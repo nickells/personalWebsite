@@ -28,6 +28,13 @@ app.get('/api/blog', function(req,res){
 	})
 })
 
+app.get('/api/blog/:webTitle',function(req,res){
+	blog.Post.find({webTitle: req.params.webTitle})
+	.then(function(post){
+		res.json(post)
+	})
+})
+
 app.use('/bower_components', express.static(__dirname + '/bower_components'))
 
 app.all('/*', function(req,res){
