@@ -1,7 +1,7 @@
 /*$color1: #48C;*/
 /*$color1: #448;*/
 /* line 7, ../sass/projects.scss */
-.projectThumb { display: flex; flex-direction: row; width: 100%; border: 2px solid #2a629a; justify-content: space-between; background-color: rgba(255, 255, 255, 0.8); margin-bottom: 25px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
+.projectThumb { display: flex; flex-direction: row; width: 100%; /*border: 2px solid darken($color1,15);*/ justify-content: space-between; background-color: rgba(255, 255, 255, 0.8); margin-bottom: 25px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
 /* line 14, ../sass/projects.scss */
 .projectThumb .imgThumb { width: 50%; height: 100%; /*padding: 0px;*/ }
 /* line 20, ../sass/projects.scss */

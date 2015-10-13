@@ -12,12 +12,18 @@ var postSchema = mongoose.Schema({
 var Post = mongoose.model('Post', postSchema)
 
 postSchema.pre('save', function(next){
-	var doc = this;
-	Post.find().exec().then(function(posts){
-		var zero = posts.length > 9 ? '' : 0
-		doc.webTitle = zero + posts.length+'_'+doc.title.replace(/\s/,'_')
-		next()
-	})
+	this.webTitle = this.title.replace(/\s/g,'_')
+	next()
+
+	// unique names version
+	
+	// var doc = this;
+	// Post.find().exec().then(function(posts){
+	// 	var zero = posts.length > 9 ? '' : 0
+	// 	doc.webTitle = zero + posts.length+'_'+doc.title.replace(/\s/,'_')
+	// next()
+	// })
+
 })
 
 module.exports={

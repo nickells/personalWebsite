@@ -25,13 +25,19 @@
 .blogPost .preview { font-weight: lighter; font-style: italic; display: inline; color: #aaa; }
 
 /* line 59, ../sass/admin.scss */
-.delete-button-container { display: inline-block; border: 2px solid #a00; width: 150px; height: 20px; overflow: hidden; }
+.delete-button-container { display: inline-block; box-sizing: content-box; display: inline-block; border: 2px solid #990000; width: 150px; height: 20px; overflow: hidden; cursor: pointer; }
+/* line 68, ../sass/admin.scss */
+.delete-button-container * { font-size: 11pt; }
 
-/* line 66, ../sass/admin.scss */
-.deleter { width: inherit; height: inherit; background: red; color: white; }
+/* line 73, ../sass/admin.scss */
+.deleter { width: inherit; height: inherit; background: #cc0000; color: white; padding: 1px; }
+/* line 79, ../sass/admin.scss */
+.deleter:hover { background: red; }
 
-/* line 72, ../sass/admin.scss */
-.confirmer { padding: 0; display: inline; color: red; }
+/* line 83, ../sass/admin.scss */
+.confirmer { display: inline; color: #888; padding: 1px; }
 
-/* line 77, ../sass/admin.scss */
-.confirm-button { width: auto; float: right; display: inline-block; padding: 0px 10px; color: black; border: 1px solid grey; }
+/* line 88, ../sass/admin.scss */
+.confirm-button { width: auto; margin-left: 1px; float: right; display: inline-block; padding: 0px 10px; color: white; background-color: #888; }
+/* line 96, ../sass/admin.scss */
+.confirm-button:hover { background-color: #AAA; }

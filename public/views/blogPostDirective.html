@@ -1,21 +1,8 @@
-<pre>{{post | json}}</pre>
 <div class="thePost">
+
 	<h1 ui-sref="blogPost({webTitle: post.webTitle})">{{post.title}}<i class="fa fa-link"></i></h1>
 	<p class="date">{{post.date.toString() | date:"medium"}}</p>
 	<p marked="post.text"></p>
-	<div class="delete-button-container">
-	  <div class="deleter">
-	    Delete post
-	  </div>
-	  <div class="confirmer">
-	    Really?
-	    <div class="confirm-button N">
-	      No
-	    </div><div class="confirm-button Y">
-	      Yes
-	    </div>
-	  </div>
 
-	</div>
 </div>
 <hr>
