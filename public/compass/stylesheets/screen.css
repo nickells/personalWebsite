@@ -130,8 +130,12 @@ blog-post .thePost .fa { position: relative; opacity: 0; font-size: 20pt; paddin
 /* line 37, ../sass/blog.scss */
 blog-post .thePost p, blog-post .thePost p ul, blog-post .thePost i, blog-post .thePost b { margin: 0; font-size: 14pt; font-weight: lighter; line-height: 1.6; }
 /* line 44, ../sass/blog.scss */
+blog-post .thePost pre { background: #EEE; padding: 5px; }
+/* line 49, ../sass/blog.scss */
+blog-post .thePost code { background: #EEE; }
+/* line 53, ../sass/blog.scss */
 blog-post .thePost .date { font-style: italic; font-size: 12pt; color: grey; margin: 3px 0px; }
-/* line 56, ../sass/blog.scss */
+/* line 66, ../sass/blog.scss */
 blog-post hr { display: none; margin: 20px auto; width: 80%; border: 0; height: 1px; background-image: linear-gradient(to right, transparent, #e69500, transparent); }
 
 /* line 5, ../sass/navbar.scss */
