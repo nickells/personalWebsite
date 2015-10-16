@@ -1,7 +1,5 @@
 var mongoose = require('mongoose');
-// mongoose.connect('mongodb://localhost/blog')
-
-mongoose.connect('mongodb://heroku_f0zqz7md:p0p76ml457n2ij9gkgh3ogr63s@ds039684.mongolab.com:39684/heroku_f0zqz7md')
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/blog')
 
 var postSchema = mongoose.Schema({
 	title: {type: String, required: true},
