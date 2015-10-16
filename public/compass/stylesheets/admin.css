@@ -9,35 +9,35 @@
 /* line 20, ../sass/admin.scss */
 #admin form #title { font-size: 20pt; font-weight: bold; width: 100%; }
 /* line 25, ../sass/admin.scss */
-#admin form textarea { width: 100%; height: 200px; display: inline-block; }
-/* line 30, ../sass/admin.scss */
+#admin form textarea { width: 100%; height: 200px; display: inline-block; font-size: 14pt; }
+/* line 31, ../sass/admin.scss */
 #admin form #tags { width: 100%; }
-/* line 33, ../sass/admin.scss */
+/* line 34, ../sass/admin.scss */
 #admin form button { float: right; }
-/* line 37, ../sass/admin.scss */
+/* line 38, ../sass/admin.scss */
 #admin #togglePreview * { cursor: pointer; display: inline; }
 
-/* line 43, ../sass/admin.scss */
+/* line 44, ../sass/admin.scss */
 .blogPost { background: white; padding: 15px; }
-/* line 46, ../sass/admin.scss */
+/* line 47, ../sass/admin.scss */
 .blogPost, .blogPost * { font-size: 12pt; }
-/* line 49, ../sass/admin.scss */
+/* line 50, ../sass/admin.scss */
 .blogPost .preview { font-weight: lighter; font-style: italic; display: inline; color: #aaa; }
 
-/* line 59, ../sass/admin.scss */
+/* line 60, ../sass/admin.scss */
 .delete-button-container { display: inline-block; box-sizing: content-box; display: inline-block; border: 2px solid #990000; width: 150px; height: 20px; overflow: hidden; cursor: pointer; }
-/* line 68, ../sass/admin.scss */
+/* line 69, ../sass/admin.scss */
 .delete-button-container * { font-size: 11pt; }
 
-/* line 73, ../sass/admin.scss */
+/* line 74, ../sass/admin.scss */
 .deleter { width: inherit; height: inherit; background: #cc0000; color: white; padding: 1px; }
-/* line 79, ../sass/admin.scss */
+/* line 80, ../sass/admin.scss */
 .deleter:hover { background: red; }
 
-/* line 83, ../sass/admin.scss */
+/* line 84, ../sass/admin.scss */
 .confirmer { display: inline; color: #888; padding: 1px; }
 
-/* line 88, ../sass/admin.scss */
+/* line 89, ../sass/admin.scss */
 .confirm-button { width: auto; margin-left: 1px; float: right; display: inline-block; padding: 0px 10px; color: white; background-color: #888; }
-/* line 96, ../sass/admin.scss */
+/* line 97, ../sass/admin.scss */
 .confirm-button:hover { background-color: #AAA; }

@@ -1,6 +1,8 @@
 <div class="thePost">
 
-	<h1 ui-sref="blogPost({webTitle: post.webTitle})">{{post.title}}<i class="fa fa-link"></i></h1>
+	<h1 ui-sref="blogPost({webTitle: post.webTitle})">{{post.title}}
+	<!-- <i class="fa fa-link"> -->
+	</i></h1>
 	<p class="date">{{post.date.toString() | date:"medium"}}</p>
 	<p marked="post.text"></p>
 
