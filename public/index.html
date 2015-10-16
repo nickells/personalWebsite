@@ -15,7 +15,7 @@
 
 </head>
 <body>
-	<div id="nav" ng-controller="NavCtrl">
+	<div id="nav" ng-controller="NavCtrl" ng-cloak>
 			   	<div class="navBar beginning"></div>
 			   	<div class="navLink" ng-repeat="button in nav" ui-sref="{{button.name}}" tabindex="1" ng-click='setActive(button.name)' ng-class='{active: activePageObj.active == button.name}'>{{button.displayName}}</div>
 			  	<div class="navBar end"></div>
