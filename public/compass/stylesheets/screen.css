@@ -118,25 +118,29 @@ body { height: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; }
 .blogHeader { font-weight: 800; font-size: 60px; }
 
 /* line 13, ../sass/blog.scss */
-blog-post .thePost { background: white; display: flex; flex-direction: column; padding: 15px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); border-bottom: 5px solid #4488cc; margin-bottom: 30px; }
-/* line 18, ../sass/blog.scss */
-blog-post .thePost > h1 { margin: 0px 0px; font-weight: 800; color: #666; cursor: pointer; }
-/* line 23, ../sass/blog.scss */
-blog-post .thePost > h1:hover { color: #4488cc; }
-/* line 26, ../sass/blog.scss */
-blog-post .thePost > h1:hover > .fa { opacity: 1; }
+.thePost { background: white; display: flex; flex-direction: column; padding: 20px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); border-bottom: 5px solid #4488cc; margin-bottom: 30px; }
+/* line 15, ../sass/blog.scss */
+.thePost img { /*			margin-left: -20px;
+			max-width: calc(100% + 40px);*/ max-width: 100%; }
+/* line 25, ../sass/blog.scss */
+.thePost > h1 { margin: 0px 0px; font-weight: 800; color: #666; cursor: pointer; }
 /* line 30, ../sass/blog.scss */
-blog-post .thePost .fa { position: relative; opacity: 0; font-size: 20pt; padding-left: 5px; bottom: 2px; }
+.thePost > h1:hover { color: #4488cc; }
+/* line 33, ../sass/blog.scss */
+.thePost > h1:hover > .fa { opacity: 1; }
 /* line 37, ../sass/blog.scss */
-blog-post .thePost p, blog-post .thePost p ul, blog-post .thePost i, blog-post .thePost b { margin: 0; font-size: 13pt; font-weight: lighter; line-height: 1.6; }
-/* line 45, ../sass/blog.scss */
-blog-post .thePost pre, blog-post .thePost code { font-size: 12pt; border: 1px solid #DDD; background: #F7F7F7; padding: 5px; border-radius: 5px; white-space: pre-wrap; /*css-3*/ white-space: -moz-pre-wrap; /*Mozilla,since1999*/ white-space: -pre-wrap; /*Opera4-6*/ white-space: -o-pre-wrap; /*Opera7*/ word-wrap: break-word; }
-/* line 57, ../sass/blog.scss */
-blog-post .thePost pre code, blog-post .thePost code code { border: none; }
+.thePost .fa { position: relative; opacity: 0; font-size: 20pt; padding-left: 5px; bottom: 2px; }
+/* line 44, ../sass/blog.scss */
+.thePost p, .thePost p ul, .thePost i, .thePost b { margin: 0; font-size: 13pt; font-weight: lighter; line-height: 1.6; }
+/* line 52, ../sass/blog.scss */
+.thePost pre, .thePost code { font-size: 12pt; border: 1px solid #DDD; background: #F7F7F7; padding: 5px; border-radius: 5px; white-space: pre-wrap; /*css-3*/ white-space: -moz-pre-wrap; /*Mozilla,since1999*/ white-space: -pre-wrap; /*Opera4-6*/ white-space: -o-pre-wrap; /*Opera7*/ word-wrap: break-word; }
 /* line 63, ../sass/blog.scss */
-blog-post .thePost .date { font-style: italic; font-size: 12pt; color: grey; margin: 3px 0px; }
-/* line 76, ../sass/blog.scss */
-blog-post hr { display: none; margin: 20px auto; width: 80%; border: 0; height: 1px; background-image: linear-gradient(to right, transparent, #e69500, transparent); }
+.thePost pre code, .thePost code code { border: none; }
+/* line 69, ../sass/blog.scss */
+.thePost .date { font-style: italic; font-size: 12pt; color: grey; margin: 3px 0px; }
+
+/* line 82, ../sass/blog.scss */
+hr { margin: 20px auto; width: 100%; border: 0; height: 2px; background-color: #DDD; }
 
 /* line 5, ../sass/navbar.scss */
 #nav { position: fixed; height: 50px; display: flex; width: 100%; margin: 0px 0px 40px; /*box-shadow: 0 20px 50px rgba(255,255,255,0.6);*/ }
