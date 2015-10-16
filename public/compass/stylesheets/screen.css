@@ -128,14 +128,14 @@ blog-post .thePost > h1:hover > .fa { opacity: 1; }
 /* line 30, ../sass/blog.scss */
 blog-post .thePost .fa { position: relative; opacity: 0; font-size: 20pt; padding-left: 5px; bottom: 2px; }
 /* line 37, ../sass/blog.scss */
-blog-post .thePost p, blog-post .thePost p ul, blog-post .thePost i, blog-post .thePost b { margin: 0; font-size: 14pt; font-weight: lighter; line-height: 1.6; }
-/* line 44, ../sass/blog.scss */
-blog-post .thePost pre { background: #EEE; padding: 5px; }
-/* line 49, ../sass/blog.scss */
-blog-post .thePost code { background: #EEE; }
-/* line 53, ../sass/blog.scss */
+blog-post .thePost p, blog-post .thePost p ul, blog-post .thePost i, blog-post .thePost b { margin: 0; font-size: 13pt; font-weight: lighter; line-height: 1.6; }
+/* line 45, ../sass/blog.scss */
+blog-post .thePost pre, blog-post .thePost code { font-size: 12pt; border: 1px solid #DDD; background: #F7F7F7; padding: 5px; border-radius: 5px; white-space: pre-wrap; /*css-3*/ white-space: -moz-pre-wrap; /*Mozilla,since1999*/ white-space: -pre-wrap; /*Opera4-6*/ white-space: -o-pre-wrap; /*Opera7*/ word-wrap: break-word; }
+/* line 57, ../sass/blog.scss */
+blog-post .thePost pre code, blog-post .thePost code code { border: none; }
+/* line 63, ../sass/blog.scss */
 blog-post .thePost .date { font-style: italic; font-size: 12pt; color: grey; margin: 3px 0px; }
-/* line 66, ../sass/blog.scss */
+/* line 76, ../sass/blog.scss */
 blog-post hr { display: none; margin: 20px auto; width: 80%; border: 0; height: 1px; background-image: linear-gradient(to right, transparent, #e69500, transparent); }
 
 /* line 5, ../sass/navbar.scss */
