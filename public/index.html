@@ -20,9 +20,20 @@
 			   	<div class="navLink" ng-cloak ng-repeat="button in nav" ui-sref="{{button.name}}" tabindex="1" ng-click='setActive(button.name)' ng-class='{active: activePageObj.active == button.name}'>{{button.displayName}}</div>
 			  	<div class="navBar end"></div>
 	</div>
+	<div class="sidebar">
+<div class="nick-face">
+	<img src="images/nick2.png">
+</div>
+<div class="text-container">
+Nick Ellsworth asdf
+</div>
+
+</div>
+
 	<div id="content">
 		<ui-view></ui-view>
 	</div>
+	
 
 
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
