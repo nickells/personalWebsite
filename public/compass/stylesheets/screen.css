@@ -155,7 +155,7 @@ body { height: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; }
 .thePost .date { font-style: italic; font-size: 12pt; color: grey; margin: 3px 0px; }
 
 /* line 82, ../sass/blog.scss */
-hr { margin: 19px auto; width: 100%; border: 0; height: 2px; background-color: #DDD; }
+hr { margin: 25px auto; width: 100%; border: 0; height: 2px; background-color: #DDD; }
 
 /* line 5, ../sass/navbar.scss */
 #nav { position: fixed; z-index: 2; height: 50px; display: flex; width: 100%; margin: 0px 0px 40px; /*box-shadow: 0 20px 50px rgba(255,255,255,0.6);*/ }

@@ -26,4 +26,4 @@
 .thePost .date { font-style: italic; font-size: 12pt; color: grey; margin: 3px 0px; }
 
 /* line 82, ../sass/blog.scss */
-hr { margin: 19px auto; width: 100%; border: 0; height: 2px; background-color: #DDD; }
+hr { margin: 25px auto; width: 100%; border: 0; height: 2px; background-color: #DDD; }
