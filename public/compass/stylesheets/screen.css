@@ -72,6 +72,15 @@ body { height: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; }
 /* line 51, ../sass/projects.scss */
 .projectThumb .description .bottombuttons-container div:hover { background: linear-gradient(#ffae1a, #e69500); }
 
+/* line 4, ../sass/about.scss */
+.nick-face { border: 4px solid #4488cc; border-radius: 100%; background: transparent; width: 150px; height: 150px; }
+/* line 10, ../sass/about.scss */
+.nick-face img { position: relative; transition: .5s; width: 86%; margin-left: 7%; margin-right: 7%; top: -5%; }
+/* line 17, ../sass/about.scss */
+.nick-face img:hover { transform: scale(1.2); }
+/* line 21, ../sass/about.scss */
+.nick-face:hover { border: 4px solid #e69500; }
+
 /* line 8, ../sass/admin.scss */
 #admin * { margin-bottom: 10px; }
 /* line 12, ../sass/admin.scss */
