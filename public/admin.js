@@ -7,7 +7,7 @@ app.config(function($stateProvider){
 		// controller: function($state){
 		// 	$state.go('admin.allPosts')
 		// }
-		
+		//comment
 	})
 	$stateProvider.state('admin.newPost',{
 		url: '/new',
