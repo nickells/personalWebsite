@@ -4,26 +4,26 @@
 .blogHeader { font-weight: 800; font-size: 60px; }
 
 /* line 13, ../sass/blog.scss */
-.thePost { background: white; display: flex; flex-direction: column; padding: 20px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); border-bottom: 5px solid #4488cc; margin-bottom: 30px; }
+.thePost { background: white; display: block; padding: 20px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); border-bottom: 5px solid #4488cc; margin-bottom: 30px; }
 /* line 15, ../sass/blog.scss */
 .thePost img { /*			margin-left: -20px;
 			max-width: calc(100% + 40px);*/ max-width: 100%; }
-/* line 25, ../sass/blog.scss */
+/* line 24, ../sass/blog.scss */
 .thePost > h1 { margin: 0px 0px; font-weight: 800; color: #666; cursor: pointer; }
-/* line 30, ../sass/blog.scss */
+/* line 29, ../sass/blog.scss */
 .thePost > h1:hover { color: #4488cc; }
-/* line 33, ../sass/blog.scss */
+/* line 32, ../sass/blog.scss */
 .thePost > h1:hover > .fa { opacity: 1; }
-/* line 37, ../sass/blog.scss */
+/* line 36, ../sass/blog.scss */
 .thePost .fa { position: relative; opacity: 0; font-size: 20pt; padding-left: 5px; bottom: 2px; }
-/* line 44, ../sass/blog.scss */
+/* line 43, ../sass/blog.scss */
 .thePost p, .thePost p ul, .thePost i, .thePost b { margin: 0; font-size: 13pt; font-weight: lighter; line-height: 1.6; }
-/* line 52, ../sass/blog.scss */
+/* line 51, ../sass/blog.scss */
 .thePost pre, .thePost code { font-size: 12pt; border: 1px solid #DDD; background: #F7F7F7; padding: 5px; border-radius: 5px; white-space: pre-wrap; /*css-3*/ white-space: -moz-pre-wrap; /*Mozilla,since1999*/ white-space: -pre-wrap; /*Opera4-6*/ white-space: -o-pre-wrap; /*Opera7*/ word-wrap: break-word; }
-/* line 63, ../sass/blog.scss */
+/* line 62, ../sass/blog.scss */
 .thePost pre code, .thePost code code { border: none; }
-/* line 69, ../sass/blog.scss */
+/* line 68, ../sass/blog.scss */
 .thePost .date { font-style: italic; font-size: 12pt; color: grey; margin: 3px 0px; }
 
-/* line 82, ../sass/blog.scss */
+/* line 81, ../sass/blog.scss */
 hr { margin: 20px auto; width: 100%; border: 0; height: 2px; background-color: #DDD; }

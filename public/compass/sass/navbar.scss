@@ -5,7 +5,7 @@
 #nav{
 	position: fixed;
 	height: 50px;
-	display: flex;
+	display: -webkit-flex;
 	width: 100%;
 	*{
 		font-size: 12pt;
@@ -19,11 +19,11 @@
 		color: white;
 		display: inline;
 		box-shadow: $shadow1;
-		width: 100%;
+		padding-top: 17px;
 		border-bottom: 2px solid darken($color1,20);
 	}
 	.beginning{
-		max-width: calc((100vw - 1000px)/2);
+		min-width: calc((100vw - 1000px)/2);
 		margin-right: 1px;
 	}
 	.end{
@@ -31,16 +31,17 @@
 		margin-left: 1px;
 	}
 	.navLink{
+		padding: 0px 10px;
+		padding-top: 17px;
 		outline: none;
-		background: linear-gradient($color1, darken($color1,10));
 		position: relative;
 		color: white;
-		padding: 15px;
 		margin: 0 1px;
+		min-width: 100px;
 		transition: .2s;
 		bottom: 0px;
 		box-shadow: $shadow1;
-		padding-top: 17px;
+		text-align: center;
 		border-bottom: 2px solid darken($color1,20);
 
 		&:hover{
