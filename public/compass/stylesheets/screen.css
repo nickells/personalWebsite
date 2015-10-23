@@ -5,26 +5,45 @@
 body { margin: 0; font-family: 'Roboto', sans-serif; font-size: 10pt; /*background: url('../../images/concrete_wall.png');*/ background: #DDD; }
 
 /* line 20, ../sass/screen.scss */
-#content { padding-top: 100px; max-width: 1000px; width: 100%; margin: 0 auto; }
+#content { padding-top: 80px; /*border: 1px solid black;*/ max-width: 1000px; width: 100%; margin: 0 auto; }
 
 /*@import './responsive.scss';*/
+/* line 6, ../sass/projects.scss */
+.projectImgThumb { display: inline-block; width: 100%; background-size: 1600px !important; background-position: 100% 50% !important; height: 276px; position: relative; transition: .4s; cursor: pointer; }
 /* line 7, ../sass/projects.scss */
-.projectThumb { display: flex; flex-direction: row; width: 100%; /*border: 2px solid darken($color1,15);*/ justify-content: space-between; background-color: rgba(255, 255, 255, 0.8); margin-bottom: 25px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
-/* line 14, ../sass/projects.scss */
-.projectThumb .imgThumb { width: 50%; height: 100%; /*padding: 0px;*/ }
-/* line 20, ../sass/projects.scss */
-.projectThumb .title { padding: 10px; background: linear-gradient(#4488cc, #2f6fae); color: white; }
-/* line 25, ../sass/projects.scss */
-.projectThumb .name2 { display: none; }
-/* line 28, ../sass/projects.scss */
-.projectThumb .description { display: flex; flex-direction: column; }
-/* line 31, ../sass/projects.scss */
-.projectThumb .description span { padding: 10px; line-height: 1.5; flex-grow: 1; }
-/* line 36, ../sass/projects.scss */
-.projectThumb .description .bottombuttons-container { display: flex; flex-direction: row; font-weight: 500; color: white; }
-/* line 42, ../sass/projects.scss */
-.projectThumb .description .bottombuttons-container div { box-sizing: margin-box; width: 100%; margin: 1px; background: linear-gradient(#e69500, #b37400); box-sizing: content-box; text-align: center; padding: 10px; cursor: pointer; }
+.projectImgThumb * { z-index: 0 !important; }
+/* line 18, ../sass/projects.scss */
+.projectImgThumb .overlay { width: 100%; height: 100%; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+60,0+100,0.3+100 */ background: -webkit-radial-gradient(center, ellipse cover, transparent 0%, transparent 60%, rgba(0, 0, 0, 0.6) 100%); /* Chrome10+,Safari5.1+ */ background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%); /* W3C */ opacity: 0.8; color: white; transition: .4s; transform-origin: 0% 0%; text-align: center; overflow: hidden; }
+/* line 30, ../sass/projects.scss */
+.projectImgThumb .overlay h1 { padding-top: 70px; font-size: 65px; text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); transition: .5s; margin-top: 0px; margin-bottom: 0px; }
+/* line 38, ../sass/projects.scss */
+.projectImgThumb .overlay p { font-size: 18px; border: 1px solid white; display: inline-block; padding: 20px; background: rgba(0, 0, 0, 0.8); box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
+/* line 48, ../sass/projects.scss */
+.projectImgThumb:hover .overlay { opacity: 0; }
 /* line 51, ../sass/projects.scss */
+.projectImgThumb:hover h1 { /*margin-top: -50px;*/ letter-spacing: 10px; text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
+
+/* line 60, ../sass/projects.scss */
+.projectThumb { /*display: inline-block;*/ /*flex-direction: row;*/ width: 490px; /*border: 2px solid darken($color1,15);*/ background-color: rgba(255, 255, 255, 0.8); margin-bottom: 25px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
+@media (max-width: 1000px) { /* line 60, ../sass/projects.scss */
+  .projectThumb { display: block !important; margin: 0 auto; } }
+@media (min-width: 1000px) { /* line 60, ../sass/projects.scss */
+  .projectThumb { display: inline-block !important; margin: 0 5px; } }
+/* line 74, ../sass/projects.scss */
+.projectThumb .imgThumb { width: 50%; height: 100%; /*padding: 0px;*/ }
+/* line 80, ../sass/projects.scss */
+.projectThumb .title { padding: 10px; background: linear-gradient(#4488cc, #2f6fae); color: white; }
+/* line 85, ../sass/projects.scss */
+.projectThumb .name2 { display: none; }
+/* line 88, ../sass/projects.scss */
+.projectThumb .description { display: flex; flex-direction: column; }
+/* line 91, ../sass/projects.scss */
+.projectThumb .description span { padding: 10px; line-height: 1.5; flex-grow: 1; }
+/* line 96, ../sass/projects.scss */
+.projectThumb .description .bottombuttons-container { display: flex; flex-direction: row; font-weight: 500; color: white; }
+/* line 102, ../sass/projects.scss */
+.projectThumb .description .bottombuttons-container div { box-sizing: margin-box; width: 100%; margin: 1px; background: linear-gradient(#e69500, #b37400); box-sizing: content-box; text-align: center; padding: 10px; cursor: pointer; }
+/* line 111, ../sass/projects.scss */
 .projectThumb .description .bottombuttons-container div:hover { background: linear-gradient(#ffae1a, #e69500); }
 
 /* line 4, ../sass/about.scss */
@@ -107,22 +126,22 @@ body { margin: 0; font-family: 'Roboto', sans-serif; font-size: 10pt; /*backgrou
 hr { margin: 20px auto; width: 100%; border: 0; height: 2px; background-color: #DDD; }
 
 /* line 5, ../sass/navbar.scss */
-#nav { position: fixed; height: 50px; display: -webkit-flex; width: 100%; margin: 0px 0px 40px; /*box-shadow: 0 20px 50px rgba(255,255,255,0.6);*/ }
-/* line 10, ../sass/navbar.scss */
+#nav { z-index: 1 !important; position: fixed; height: 50px; display: -webkit-flex; width: 100%; margin: 0px 0px 40px; /*box-shadow: 0 20px 50px rgba(255,255,255,0.6);*/ }
+/* line 11, ../sass/navbar.scss */
 #nav * { font-size: 12pt; text-transform: uppercase; letter-spacing: 2px; }
-/* line 16, ../sass/navbar.scss */
+/* line 17, ../sass/navbar.scss */
 #nav .navBar { background: linear-gradient(#4488cc, #2f6fae); position: relative; color: white; display: inline; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); padding-top: 17px; border-bottom: 2px solid #245586; }
-/* line 25, ../sass/navbar.scss */
+/* line 26, ../sass/navbar.scss */
 #nav .beginning { min-width: calc((100vw - 1000px)/2); margin-right: 1px; }
-/* line 29, ../sass/navbar.scss */
+/* line 30, ../sass/navbar.scss */
 #nav .end { width: 100%; margin-left: 1px; }
-/* line 33, ../sass/navbar.scss */
+/* line 34, ../sass/navbar.scss */
 #nav .navLink { padding: 0px 10px; padding-top: 17px; outline: none; position: relative; color: white; margin: 0 1px; min-width: 100px; transition: .2s; bottom: 0px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); text-align: center; border-bottom: 2px solid #245586; }
-/* line 47, ../sass/navbar.scss */
+/* line 48, ../sass/navbar.scss */
 #nav .navLink:hover { cursor: pointer; background: linear-gradient(#5895d1, #4488cc); border-bottom: 2px solid #2f6fae; bottom: 3px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25); }
 
-/* line 61, ../sass/navbar.scss */
+/* line 62, ../sass/navbar.scss */
 .active { border-bottom: 6px solid #e69500 !important; }
 
-/* line 65, ../sass/navbar.scss */
+/* line 66, ../sass/navbar.scss */
 h1 { font-size: 30pt; font-weight: 500; margin: 0; }

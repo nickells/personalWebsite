@@ -3,6 +3,7 @@
 @import './basecolors.scss';
 
 #nav{
+	z-index: 1 !important;
 	position: fixed;
 	height: 50px;
 	display: -webkit-flex;
