@@ -1,39 +1,53 @@
 /*$color1: #48C;*/
 /*$color1: #448;*/
 /* line 6, ../sass/projects.scss */
-.projectImgThumb { display: inline-block; width: 100%; background-size: 1600px !important; background-position: 100% 50% !important; height: 276px; position: relative; transition: .4s; cursor: pointer; }
+.projectImgThumb { display: inline-block; width: 100%; background-size: 1600px !important; background-position: 100% 50% !important; height: 276px; position: relative; cursor: pointer; overflow: hidden; }
 /* line 7, ../sass/projects.scss */
 .projectImgThumb * { z-index: 0 !important; }
 /* line 18, ../sass/projects.scss */
-.projectImgThumb .overlay { width: 100%; height: 100%; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+60,0+100,0.3+100 */ background: -webkit-radial-gradient(center, ellipse cover, transparent 0%, transparent 60%, rgba(0, 0, 0, 0.6) 100%); /* Chrome10+,Safari5.1+ */ background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%); /* W3C */ opacity: 0.8; color: white; transition: .4s; transform-origin: 0% 0%; text-align: center; overflow: hidden; }
-/* line 30, ../sass/projects.scss */
-.projectImgThumb .overlay h1 { padding-top: 70px; font-size: 65px; text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); transition: .5s; margin-top: 0px; margin-bottom: 0px; }
-/* line 38, ../sass/projects.scss */
-.projectImgThumb .overlay p { font-size: 18px; border: 1px solid white; display: inline-block; padding: 20px; background: rgba(0, 0, 0, 0.8); box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
-/* line 48, ../sass/projects.scss */
+.projectImgThumb .overlay { width: 100%; height: 100%; transition: .4s; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+60,0+100,0.3+100 */ background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%); /* Chrome10+,Safari5.1+ */ background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%); /* W3C */ opacity: 0.8; color: white; transition: .4s; transform-origin: 0% 0%; text-align: center; overflow: hidden; }
+/* line 31, ../sass/projects.scss */
+.projectImgThumb .overlay h1 { padding-top: 55px; font-size: 65px; text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); transition: .5s; margin-top: 0px; margin-bottom: 0px; }
+/* line 40, ../sass/projects.scss */
+.projectImgThumb p { font-size: 18px; border: 1px solid white; display: inline-block; padding: 20px; margin-top: 0px; background: rgba(0, 0, 0, 0.8); box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); margin: 20px; transition: .5s; }
+/* line 52, ../sass/projects.scss */
 .projectImgThumb:hover .overlay { opacity: 0; }
-/* line 51, ../sass/projects.scss */
+/* line 55, ../sass/projects.scss */
 .projectImgThumb:hover h1 { /*margin-top: -50px;*/ letter-spacing: 10px; text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
-
 /* line 60, ../sass/projects.scss */
-.projectThumb { /*display: inline-block;*/ /*flex-direction: row;*/ width: 490px; /*border: 2px solid darken($color1,15);*/ background-color: rgba(255, 255, 255, 0.8); margin-bottom: 25px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
-@media (max-width: 1000px) { /* line 60, ../sass/projects.scss */
-  .projectThumb { display: block !important; margin: 0 auto; } }
-@media (min-width: 1000px) { /* line 60, ../sass/projects.scss */
-  .projectThumb { display: inline-block !important; margin: 0 5px; } }
-/* line 74, ../sass/projects.scss */
-.projectThumb .imgThumb { width: 50%; height: 100%; /*padding: 0px;*/ }
-/* line 80, ../sass/projects.scss */
-.projectThumb .title { padding: 10px; background: linear-gradient(#4488cc, #2f6fae); color: white; }
-/* line 85, ../sass/projects.scss */
-.projectThumb .name2 { display: none; }
-/* line 88, ../sass/projects.scss */
-.projectThumb .description { display: flex; flex-direction: column; }
+.projectImgThumb:hover p { margin-top: 50px; opacity: 1; }
+/* line 64, ../sass/projects.scss */
+.projectImgThumb:hover .links { opacity: 1; top: -10px; }
+/* line 69, ../sass/projects.scss */
+.projectImgThumb .links { display: flex; display: -webkit-flex; position: absolute; top: -100px; width: 100%; height: 90px; font-size: 20px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); transition: .5s; }
+/* line 79, ../sass/projects.scss */
+.projectImgThumb .links .link { position: relative; padding-top: 20px; box-sizing: border-box; text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); width: 100%; background: #e69500; border: 1px solid #805300; text-align: center; height: inherit; color: white; background: linear-gradient(#e69500, #b37400); }
 /* line 91, ../sass/projects.scss */
+.projectImgThumb .links .link i { font-size: 60px; margin: 0 auto; }
+/* line 95, ../sass/projects.scss */
+.projectImgThumb .links .link span { position: relative; bottom: 13px; padding: 5px; }
+/* line 100, ../sass/projects.scss */
+.projectImgThumb .links .link:hover { background: linear-gradient(#ffae1a, #e69500); }
+
+/* line 108, ../sass/projects.scss */
+.projectThumb { /*display: inline-block;*/ /*flex-direction: row;*/ width: 490px; /*border: 2px solid darken($color1,15);*/ background-color: rgba(255, 255, 255, 0.8); margin-bottom: 25px; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
+@media (max-width: 1000px) { /* line 108, ../sass/projects.scss */
+  .projectThumb { display: block !important; margin: 0 auto; } }
+@media (min-width: 1000px) { /* line 108, ../sass/projects.scss */
+  .projectThumb { display: inline-block !important; margin: 0 5px; } }
+/* line 122, ../sass/projects.scss */
+.projectThumb .imgThumb { width: 50%; height: 100%; /*padding: 0px;*/ }
+/* line 128, ../sass/projects.scss */
+.projectThumb .title { padding: 10px; background: linear-gradient(#4488cc, #2f6fae); color: white; }
+/* line 133, ../sass/projects.scss */
+.projectThumb .name2 { display: none; }
+/* line 136, ../sass/projects.scss */
+.projectThumb .description { display: flex; flex-direction: column; }
+/* line 139, ../sass/projects.scss */
 .projectThumb .description span { padding: 10px; line-height: 1.5; flex-grow: 1; }
-/* line 96, ../sass/projects.scss */
+/* line 144, ../sass/projects.scss */
 .projectThumb .description .bottombuttons-container { display: flex; flex-direction: row; font-weight: 500; color: white; }
-/* line 102, ../sass/projects.scss */
+/* line 150, ../sass/projects.scss */
 .projectThumb .description .bottombuttons-container div { box-sizing: margin-box; width: 100%; margin: 1px; background: linear-gradient(#e69500, #b37400); box-sizing: content-box; text-align: center; padding: 10px; cursor: pointer; }
-/* line 111, ../sass/projects.scss */
+/* line 159, ../sass/projects.scss */
 .projectThumb .description .bottombuttons-container div:hover { background: linear-gradient(#ffae1a, #e69500); }
