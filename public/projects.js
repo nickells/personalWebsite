@@ -13,8 +13,8 @@ app.controller('ProjectsCtrl', function($scope,navService){
 
 	$scope.projects = 
 		[{
-			name: "blipcrowd",
-			displayName: "BlipCrowd",
+			name: "breezeblocks",
+			displayName: "Breezeblocks.io",
 			description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 		}, {
 			name: "dictatone",
@@ -25,8 +25,8 @@ app.controller('ProjectsCtrl', function($scope,navService){
 			displayName: "MementoDash",
 			description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 		}, {
-			name: "breezeblocks",
-			displayName: "Breezeblocks.io",
+			name: "blipcrowd",
+			displayName: "BlipCrowd",
 			description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 		}]
 
