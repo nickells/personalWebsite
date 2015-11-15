@@ -1,7 +1,7 @@
 app.config(function($stateProvider,$locationProvider){
 	$locationProvider.html5Mode({
 	  enabled: true,
-	  requireBase: false
+	  requireBase: true
 	});
 
 

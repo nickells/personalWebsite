@@ -1,8 +1,8 @@
 app.config(function($stateProvider){
 	$stateProvider.state('admin',{
 		url: '/admin',
+		abstract: true,
 		templateUrl: 'views/admin.html',
-		
 		//redirects to allPosts state
 		// controller: function($state){
 		// 	$state.go('admin.allPosts')
@@ -10,16 +10,16 @@ app.config(function($stateProvider){
 		//comment
 	})
 	$stateProvider.state('admin.newPost',{
-		url: '/new',
-		parent: 'admin',
+		url: '',
 		templateUrl: 'views/admin.add-post.html',
 		controller: 'AddPostCtrl',
 		onEnter: function(navService){
+			console.log('hello!')
 			navService.setActive('newPost')
 		}
 	})
 	$stateProvider.state('admin.allPosts', {
-		url: '/all',
+		url: '^/admin/all',
 		templateUrl: 'views/admin.all-posts.html',
 		controller: 'AllPostsCtrl',
 		resolve: {
@@ -49,19 +49,24 @@ app.controller('AddPostCtrl', function($scope,BlogFactory){
 
 })
 
-app.directive('deleteButton', function(){
-	return {
-		restrict: 'E',
-		templateUrl: 'views/deleteButton.html',
-		link: function(elem){
-			$('.deleter').on('click', function(){
-			  $(this).slideUp()
-			});
+app.run(['$state', '$stateParams',
+    function($state, $stateParams) {
+        //this solves page refresh and getting back to state
+}]);
 
-			$('.confirm-button.N').on('click', function(){
-			  $('.deleter').slideDown()
-			})
-		}
-	}
+// app.directive('deleteButton', function(){
+// 	return {
+// 		restrict: 'E',
+// 		templateUrl: 'views/deleteButton.html',
+// 		link: function(elem){
+// 			$('.deleter').on('click', function(){
+// 			  $(this).slideUp()
+// 			});
 
-})
+// 			$('.confirm-button.N').on('click', function(){
+// 			  $('.deleter').slideDown()
+// 			})
+// 		}
+// 	}
+
+// })
