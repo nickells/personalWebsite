@@ -6,7 +6,7 @@ var session = require('express-session')
 var api = require('./api-routes')
 
 app.use(session({
-	secret: 'hello this is dog',
+	secret: process.env.SESSION_SECRET || 'hello',
 	resave: false,
 	saveUninitialized: true
 }))

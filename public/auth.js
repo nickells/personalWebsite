@@ -8,9 +8,9 @@ app.config(function($stateProvider){
 
 app.controller('LogInCtrl', function($state, AuthFactory,$scope){
     $scope.logIn = function(){
-        AuthFactory.login($scope.login.password)
+        AuthFactory.logIn($scope.login.password)
         .then(function(){
-            $state.go('admin')
+            $state.go('admin.newPost')
         })
     }
 })
@@ -19,9 +19,16 @@ app.factory('AuthFactory', function($http){
     var auth = {}
 
     auth.logIn = function(creds){
-        return $http.post('/api/login',creds)
+        return $http.post('/api/login',{creds: creds})
         .then(function(res){
-            return res.data
+            return res.data;
+        })
+    }
+
+    auth.checkAuth = function(){
+        return $http.get('/api/login')
+        .then(function(res){
+            return res.data;
         })
     }
 
