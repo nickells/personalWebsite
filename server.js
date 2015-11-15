@@ -12,11 +12,10 @@ app.post('/api/blog', function(req,res){
 	blog.Post.create(req.body)
 	.then(function(post){
 		post.date = Date.now()
-		post.save()
-		return post
+		return post.save()
 	})
 	.then(function(post){
-		res.send('post saved' + post)
+		res.send(post)
 	})
 })
 

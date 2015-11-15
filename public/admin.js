@@ -47,10 +47,14 @@ app.controller('AllPostsCtrl', function($scope, BlogPosts,BlogFactory){
 	}
 })
 
-app.controller('AddPostCtrl', function($scope,BlogFactory){
+app.controller('AddPostCtrl', function($scope,BlogFactory,$state){
 	$scope.submit = function(post){
 		console.log('submitting')
 		return BlogFactory.addPost(post)
+		.then(function(post){
+			console.log(post)
+			$state.go('blogPost', {webTitle: post.webTitle})
+		})
 	}
 
 	$scope.previewEnabled = false;
