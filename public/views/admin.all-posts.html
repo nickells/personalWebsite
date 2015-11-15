@@ -2,6 +2,8 @@
 	{{post.title}}: 
 	<span class="preview">{{post.text.slice(0,100)}}</span>
 	<span class="preview" ng-if='post.text.length > 100'>…</span>
-  <span class="fa fa-times"></span>
+  <span class="fa fa-trash" ng-click="askDelete(post)" ng-hide="post.confirmDelete"></span>
+  <span class="fa fa-times" ng-click="doNotDelete(post)" ng-if="post.confirmDelete"></span>
+  <span class="fa fa-check" ng-click="delete(post)" ng-if="post.confirmDelete"></span>
 	<!-- <delete-button></delete-button> -->
 </div>

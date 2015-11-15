@@ -39,6 +39,15 @@
 		cursor: pointer;
 		display: inline;
 	}
+	.fa{
+		display: inline;
+		float: right;
+		color: lightgrey;
+	}
+	.fa.fa-check{
+		color: red;
+		margin-right: 5px;
+	}
 }
 
 .blogPost{

@@ -38,6 +38,12 @@ app.factory('BlogFactory', function($http){
 		addPost: function(body){
 			console.log('blogFactory',body)
 			return $http.post('/api/blog',body)
+		},
+		deletePost: function(post){
+			return $http.delete('/api/blog/'+post._id)
+			.then(function(post){
+				return post.data
+			})
 		}
 	}
 })

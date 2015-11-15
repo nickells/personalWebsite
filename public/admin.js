@@ -31,8 +31,20 @@ app.config(function($stateProvider){
 })
 
 
-app.controller('AllPostsCtrl', function($scope, BlogPosts){
+app.controller('AllPostsCtrl', function($scope, BlogPosts,BlogFactory){
 	$scope.posts = BlogPosts
+
+	$scope.delete = function(post){
+		$scope.posts.splice($scope.posts.indexOf(post),1)
+		return BlogFactory.deletePost(post)
+	}
+	$scope.doNotDelete = function(post){
+		post.confirmDelete = false;
+	}
+
+	$scope.askDelete = function(post){
+		post.confirmDelete = true;
+	}
 })
 
 app.controller('AddPostCtrl', function($scope,BlogFactory){

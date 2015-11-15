@@ -34,11 +34,18 @@ app.get('/api/blog/:webTitle',function(req,res){
 	})
 })
 
+app.delete('/api/blog/:id', function(req,res){
+	blog.Post.findById(req.params.id).remove().exec()
+	.then(function(post){
+		res.json(post);
+	})
+})
+
 app.use(express.static('public'))
 app.use('/bower_components', express.static(__dirname + '/bower_components'))
 app.use('/*', function(req,res){
-	console.log('got to slash',req)
-	console.log('dirname', __dirname)
+	// console.log('got to slash',req)
+	// console.log('dirname', __dirname)
 	res.sendFile(__dirname + '/public/index.html')
 })
 
