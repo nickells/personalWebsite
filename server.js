@@ -1,44 +1,27 @@
 var express = require('express')
 var app = express();
-var blog = require('./db.js')
 var bodyParser = require('body-parser')
+var session = require('express-session')
+
+var api = require('./api-routes')
+
+app.use(session({
+	secret: process.env.SESSION_SECRET || 'hello',
+	resave: false,
+	saveUninitialized: true
+}))
 
 
+app.use(function(req,res,next){
+	console.log(req.session)
+	next()
+})
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post('/api/blog', function(req,res){
-	blog.Post.create(req.body)
-	.then(function(post){
-		post.date = Date.now()
-		return post.save()
-	})
-	.then(function(post){
-		res.send(post)
-	})
-})
+app.use('/api', api)
 
-app.get('/api/blog', function(req,res){
-	blog.Post.find()
-	.then(function(posts){
-		res.json(posts)
-	})
-})
-
-app.get('/api/blog/:webTitle',function(req,res){
-	blog.Post.find({webTitle: req.params.webTitle})
-	.then(function(post){
-		res.json(post)
-	})
-})
-
-app.delete('/api/blog/:id', function(req,res){
-	blog.Post.findById(req.params.id).remove().exec()
-	.then(function(post){
-		res.json(post);
-	})
-})
 
 app.use(express.static('public'))
 app.use('/bower_components', express.static(__dirname + '/bower_components'))

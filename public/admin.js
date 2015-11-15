@@ -3,11 +3,6 @@ app.config(function($stateProvider){
 		url: '/admin',
 		abstract: true,
 		templateUrl: 'views/admin.html',
-		//redirects to allPosts state
-		// controller: function($state){
-		// 	$state.go('admin.allPosts')
-		// }
-		//comment
 	})
 	$stateProvider.state('admin.newPost',{
 		url: '',
@@ -49,10 +44,8 @@ app.controller('AllPostsCtrl', function($scope, BlogPosts,BlogFactory){
 
 app.controller('AddPostCtrl', function($scope,BlogFactory,$state){
 	$scope.submit = function(post){
-		console.log('submitting')
 		return BlogFactory.addPost(post)
 		.then(function(post){
-			console.log(post)
 			$state.go('blogPost', {webTitle: post.webTitle})
 		})
 	}
@@ -69,20 +62,3 @@ app.run(['$state', '$stateParams',
     function($state, $stateParams) {
         //this solves page refresh and getting back to state
 }]);
-
-// app.directive('deleteButton', function(){
-// 	return {
-// 		restrict: 'E',
-// 		templateUrl: 'views/deleteButton.html',
-// 		link: function(elem){
-// 			$('.deleter').on('click', function(){
-// 			  $(this).slideUp()
-// 			});
-
-// 			$('.confirm-button.N').on('click', function(){
-// 			  $('.deleter').slideDown()
-// 			})
-// 		}
-// 	}
-
-// })
