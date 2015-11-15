@@ -69,20 +69,3 @@ app.run(['$state', '$stateParams',
     function($state, $stateParams) {
         //this solves page refresh and getting back to state
 }]);
-
-// app.directive('deleteButton', function(){
-// 	return {
-// 		restrict: 'E',
-// 		templateUrl: 'views/deleteButton.html',
-// 		link: function(elem){
-// 			$('.deleter').on('click', function(){
-// 			  $(this).slideUp()
-// 			});
-
-// 			$('.confirm-button.N').on('click', function(){
-// 			  $('.deleter').slideDown()
-// 			})
-// 		}
-// 	}
-
-// })
